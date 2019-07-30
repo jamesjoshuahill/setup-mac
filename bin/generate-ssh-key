@@ -1,0 +1,62 @@
+#!/usr/bin/env bash
+
+set -eu
+
+usage() {
+  echo "Usage: generate-ssh-key EMAIL_ADDRESS"
+  echo
+  echo "  e.g. generate-ssh-key some.one@example.com"
+  exit 1
+}
+
+if [ -z "${1:-}" ]; then
+  usage
+fi
+
+key_path="$HOME/.ssh/id_ed25519_$(date +'%Y%m%d')"
+email_address="$1"
+
+main() {
+  generate_ssh_key
+  add_to_keychain
+  update_github
+  remove_previous_keys
+}
+
+generate_ssh_key() {
+  echo "** Generate new SSH key"
+  # https://blog.g3rt.nl/upgrade-your-ssh-keys.html
+  ssh-keygen -t ed25519 -a 100 -C "$email_address" -f "$key_path"
+}
+
+add_to_keychain() {
+  echo "** Add new SSH key to keychain"
+  ssh-add -K "$key_path"
+}
+
+update_github() {
+  echo "** Update GitHub SSH Keys"
+  pbcopy < "$key_path.pub"
+
+  echo
+  echo "   Your new public key has been copied to the clipboard, go to: https://github.com/settings/keys"
+  echo
+  read -n1 -rp "   Have you added your new SSH key to GitHub?"
+  echo
+  echo
+  read -n1 -rp "   Have you removed your previous SSH key from GitHub?"
+  echo
+  echo
+}
+
+remove_previous_keys() {
+  echo "** Remove previous keys"
+  echo
+  read -n1 -rp "   Have you removed your previous SSH key from the ssh-agent?"
+  echo
+  echo
+  read -n1 -rp "   Have you deleted your previous SSH keys from ~/.ssh?"
+  echo
+}
+
+main
