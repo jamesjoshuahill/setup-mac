@@ -8,6 +8,11 @@ main() {
 
   configure_macos
 
+  install_brew
+  update_brew
+  update_brew_bundle
+  cleanup_brew
+
   finish
 }
 
@@ -35,6 +40,31 @@ configure_macos() {
   # fast key repeat rate, requires reboot to take effect
   defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
   defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
+}
+
+install_brew() {
+  if hash brew 2>/dev/null; then
+    echo "** Homebrew already installed"
+    return
+  fi
+
+  echo "** Install Homebrew"
+  yes '' | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+}
+
+update_brew() {
+  echo "** Update Homebrew"
+  brew update
+}
+
+update_brew_bundle() {
+  echo "** Update Homebrew Bundle"
+  brew bundle --verbose
+}
+
+cleanup_brew() {
+  echo "** Cleanup Homebrew"
+  brew cleanup
 }
 
 finish() {
