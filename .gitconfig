@@ -1,0 +1,18 @@
+[user]
+	name = Josh Hill
+	email = josh.hill@makers.tech
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	cp = cherry-pick
+	di = diff
+	ds = diff --staged
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lga = !git lg --all
+	pl = pull --rebase
+	rs = reset
+	rb = rebase
+	st = status
+[commit]
+	verbose = true
