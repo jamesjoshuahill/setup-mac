@@ -9,6 +9,9 @@ cask 'iterm2'
 # Text editors
 cask 'atom'
 
+# Ruby
+brew 'ruby'
+
 # macOS tools
 cask 'spectacle'
 cask 'flycut'
