@@ -15,7 +15,7 @@ main() {
 
   set_shell
 
-  update_rubygems
+  update_ruby_gems
 
   finish
 }
@@ -83,9 +83,11 @@ set_shell() {
   sudo chsh -s /usr/local/bin/bash
 }
 
-update_rubygems() {
-  echo "** Update RubyGems"
+update_ruby_gems() {
+  echo "** Update Ruby Gems"
   gem update --system
+  gem install bundler
+  gem install irb
 }
 
 finish() {
