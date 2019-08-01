@@ -2,6 +2,7 @@
 brew 'bash'
 brew 'bash-completion'
 brew 'git'
+brew 'diff-so-fancy'
 brew 'shellcheck'
 
 # Terminal
