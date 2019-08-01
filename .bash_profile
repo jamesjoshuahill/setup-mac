@@ -10,6 +10,9 @@ shopt -s histappend   # Append instead of overwrite
 # Add ~/bin to path
 PATH="$HOME/bin:$PATH"
 
+# Use Homebrew ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
 # Aliases
 alias ll='ls -alGh'
 
