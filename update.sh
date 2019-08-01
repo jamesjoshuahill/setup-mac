@@ -15,6 +15,8 @@ main() {
 
   set_shell
 
+  update_rubygems
+
   finish
 }
 
@@ -79,6 +81,11 @@ set_shell() {
 
   echo "** Change shell to Homebrew bash"
   sudo chsh -s /usr/local/bin/bash
+}
+
+update_rubygems() {
+  echo "** Update RubyGems"
+  gem update --system
 }
 
 finish() {
