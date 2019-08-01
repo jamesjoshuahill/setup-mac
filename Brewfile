@@ -17,6 +17,7 @@ brew 'ruby'
 # macOS tools
 cask 'spectacle'
 cask 'flycut'
+brew 'dockutil'
 
 # Apps
 cask '1password'
