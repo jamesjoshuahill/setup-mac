@@ -13,6 +13,8 @@ main() {
   update_brew_bundle
   cleanup_brew
 
+  set_shell
+
   finish
 }
 
@@ -65,6 +67,18 @@ update_brew_bundle() {
 cleanup_brew() {
   echo "** Cleanup Homebrew"
   brew cleanup
+}
+
+set_shell() {
+  if ! grep "/usr/local/bin/bash" /etc/shells > /dev/null 2>&1; then
+    echo "** Add Homebrew bash to system shells"
+    echo '/usr/local/bin/bash' | sudo tee -a /etc/shells > /dev/null
+  else
+    echo "** Homebrew bash already added to system shells"
+  fi
+
+  echo "** Change shell to Homebrew bash"
+  sudo chsh -s /usr/local/bin/bash
 }
 
 finish() {
