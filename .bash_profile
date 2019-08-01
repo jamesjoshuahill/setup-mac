@@ -12,5 +12,8 @@ PATH="$HOME/bin:$PATH"
 
 # Aliases
 alias ll='ls -alGh'
+
+# Setup
 # https://www.atlassian.com/git/tutorials/dotfiles
-alias s='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
+alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
+alias s='setup-git'
