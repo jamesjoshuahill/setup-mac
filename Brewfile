@@ -1,5 +1,6 @@
 # Command line
 brew 'bash'
+brew 'bash-completion'
 brew 'git'
 brew 'shellcheck'
 
