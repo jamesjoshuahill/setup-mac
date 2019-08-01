@@ -1,1 +1,5 @@
+# Bare git repo tracking $HOME
 .setup
+
+# Apple "Desktop services store"
+.DS_Store
