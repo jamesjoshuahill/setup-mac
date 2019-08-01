@@ -21,6 +21,7 @@ cask 'flycut'
 cask '1password'
 cask 'google-chrome'
 cask 'slack'
+cask 'zoomus'
 
 # Fonts
 tap 'homebrew/cask-fonts'
