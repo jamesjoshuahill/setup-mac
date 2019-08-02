@@ -20,3 +20,6 @@ alias ll='ls -alGh'
 # https://www.atlassian.com/git/tutorials/dotfiles
 alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
 alias s='setup-git'
+
+# Prompt
+export PS1='\[\033[93;1m\]\w\[\033[0m\] '
