@@ -12,7 +12,7 @@ cask 'iterm2'
 cask 'atom'
 
 # Ruby
-brew 'ruby'
+brew 'rbenv'
 
 # macOS tools
 cask 'spectacle'

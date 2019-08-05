@@ -16,6 +16,7 @@ main() {
   remove_icons_from_dock
   set_shell
 
+  set_global_ruby
   update_ruby_gems
 
   finish
@@ -89,6 +90,14 @@ set_shell() {
 
   echo "** Change shell to Homebrew bash"
   sudo chsh -s /usr/local/bin/bash
+}
+
+set_global_ruby() {
+  echo "** Set global Ruby"
+  local version="2.6.3"
+  eval "$(rbenv init -)"
+  rbenv install $version --skip-existing
+  rbenv global $version
 }
 
 update_ruby_gems() {
