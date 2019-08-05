@@ -105,6 +105,7 @@ update_ruby_gems() {
   gem update --system
   gem install bundler
   gem install irb
+  gem install rspec
 }
 
 finish() {
