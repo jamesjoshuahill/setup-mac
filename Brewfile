@@ -7,6 +7,9 @@ brew 'shellcheck'
 brew 'git'
 brew 'diff-so-fancy'
 
+# Command line tools
+brew 'tree'
+
 # Editors
 cask 'atom'
 
