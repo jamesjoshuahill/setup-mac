@@ -15,6 +15,7 @@ cask 'atom'
 
 # Ruby
 brew 'rbenv'
+brew 'rbenv-default-gems'
 
 # macOS tools
 cask 'spectacle'

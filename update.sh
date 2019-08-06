@@ -109,6 +109,7 @@ set_global_ruby() {
 update_ruby_gems() {
   echo "** Update Ruby Gems"
   gem update --system
+
   gem install bundler
   gem install irb
   gem install rspec
