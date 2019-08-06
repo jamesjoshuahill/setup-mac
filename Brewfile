@@ -1,14 +1,13 @@
-# Command line
+# bash
 brew 'bash'
 brew 'bash-completion'
-brew 'git'
-brew 'diff-so-fancy'
 brew 'shellcheck'
 
-# Terminal
-cask 'iterm2'
+# git
+brew 'git'
+brew 'diff-so-fancy'
 
-# Text editors
+# Editors
 cask 'atom'
 
 # Ruby
@@ -20,6 +19,7 @@ cask 'flycut'
 brew 'dockutil'
 
 # Apps
+cask 'iterm2'
 cask '1password'
 cask 'google-chrome'
 cask 'slack'
