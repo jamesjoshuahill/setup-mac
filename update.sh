@@ -6,6 +6,7 @@ main() {
   start
   cache_password
 
+  update_macos
   configure_macos
 
   install_brew
@@ -30,6 +31,11 @@ cache_password() {
   echo "** Cache password"
   sudo -K
   sudo true;
+}
+
+update_macos() {
+  echo "** Update macOS"
+  softwareupdate --install --all
 }
 
 configure_macos() {
