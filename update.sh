@@ -55,12 +55,12 @@ configure_macos() {
 }
 
 install_brew() {
+  echo "** Install Homebrew"
   if hash brew 2>/dev/null; then
-    echo "** Homebrew already installed"
+    echo "Homebrew already installed."
     return
   fi
 
-  echo "** Install Homebrew"
   yes '' | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
@@ -87,14 +87,12 @@ remove_icons_from_dock() {
 }
 
 set_shell() {
+  echo "** Change user shell"
   if ! grep "/usr/local/bin/bash" /etc/shells > /dev/null 2>&1; then
-    echo "** Add Homebrew bash to system shells"
     echo '/usr/local/bin/bash' | sudo tee -a /etc/shells > /dev/null
-  else
-    echo "** Homebrew bash already added to system shells"
+    echo "Added Homebrew bash to system shells."
   fi
 
-  echo "** Change shell to Homebrew bash"
   sudo chsh -s /usr/local/bin/bash
 }
 
