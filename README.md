@@ -16,6 +16,35 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     git clone git@github.com:jamesjoshuahill/setup.git ~/.setup/
     ```
 
+## Daily
+
+### Update everything
+
+Run the update script regularly to update everything to the latest versions:
+```
+cd
+./update.sh
+```
+
+### Record changes
+
+Check for changes:
+```
+setup-git status
+```
+
+Note: the bare git repo is configured not to show untracked files, because only
+a few files need to be tracked. So remember to check if there are any new files
+you want to record.
+
+Record changes:
+```
+setup-git add -p            # stage changes
+setup-git add NEW_FILE      # track a new file
+setup-git commit -m "..."
+setup-git push
+```
+
 ## Acknowledgements
 
 - [Gerhard Lazu's setup](https://github.com/gerhard/setup)
