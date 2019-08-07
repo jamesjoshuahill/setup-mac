@@ -23,23 +23,28 @@ main() {
   finish
 }
 
+log()  {
+  local message=$1
+  echo -e "\e[1m${message}\e[0m"
+}
+
 start() {
-  echo "** Start update"
+  log "** Start update"
 }
 
 cache_password() {
-  echo "** Cache password"
+  log "** Cache password"
   sudo -K
   sudo true;
 }
 
 update_macos() {
-  echo "** Update macOS"
+  log "** Update macOS"
   softwareupdate --install --all
 }
 
 configure_macos() {
-  echo "** Configure macOS"
+  log "** Configure macOS"
   # set menu clock
   # see http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns
   defaults write com.apple.menuextra.clock "DateFormat" 'EEE d MMM  h:mm a'
@@ -55,7 +60,7 @@ configure_macos() {
 }
 
 install_brew() {
-  echo "** Install Homebrew"
+  log "** Install Homebrew"
   if hash brew 2>/dev/null; then
     echo "Homebrew already installed."
     return
@@ -65,29 +70,29 @@ install_brew() {
 }
 
 update_brew() {
-  echo "** Update Homebrew"
+  log "** Update Homebrew"
   brew update
 }
 
 update_brew_bundle() {
-  echo "** Update Homebrew Bundle"
+  log "** Update Homebrew Bundle"
   brew bundle --verbose
 }
 
 cleanup_brew() {
-  echo "** Cleanup Homebrew"
+  log "** Cleanup Homebrew"
   brew cleanup
 }
 
 remove_icons_from_dock() {
-  echo "** Remove icons from dock"
+  log "** Remove icons from dock"
   set +o pipefail
   dockutil --list | cut -d"$(printf '\t')" -f1 | grep -v Downloads | xargs -n1 dockutil --remove --no-restart
   set -o pipefail
 }
 
 set_shell() {
-  echo "** Change user shell"
+  log "** Change user shell"
   if ! grep "/usr/local/bin/bash" /etc/shells > /dev/null 2>&1; then
     echo '/usr/local/bin/bash' | sudo tee -a /etc/shells > /dev/null
     echo "Added Homebrew bash to system shells."
@@ -97,7 +102,7 @@ set_shell() {
 }
 
 set_global_ruby() {
-  echo "** Set global Ruby"
+  log "** Set global Ruby"
   local version="2.6.3"
   eval "$(rbenv init -)"
   rbenv install $version --skip-existing
@@ -105,7 +110,7 @@ set_global_ruby() {
 }
 
 update_ruby_gems() {
-  echo "** Update Ruby Gems"
+  log "** Update Ruby Gems"
   gem update --system
 
   gem install bundler
@@ -114,7 +119,7 @@ update_ruby_gems() {
 }
 
 finish() {
-  echo "** Update finished."
+  log "** Update finished"
   echo
 }
 
