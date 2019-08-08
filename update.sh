@@ -52,8 +52,8 @@ configure_macos() {
   killall Dock
 
   # fast key repeat rate, requires reboot to take effect
-  defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
-  defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
+  defaults write "$HOME/Library/Preferences/.GlobalPreferences" KeyRepeat -int 1
+  defaults write "$HOME/Library/Preferences/.GlobalPreferences" InitialKeyRepeat -int 15
 }
 
 install_brew() {
