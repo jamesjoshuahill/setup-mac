@@ -2,7 +2,8 @@
 # shellcheck disable=SC1090,1091
 
 # Sensible bash
-source "$HOME/sensible.bash"
+source "$HOME/.sensible.bash"
+set +o noclobber
 
 # Add workspace to CDPATH
 CDPATH=".:$HOME/workspace"

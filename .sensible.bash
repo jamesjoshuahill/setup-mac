@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Sensible Bash - An attempt at saner Bash defaults
 # Maintainer: mrzool <http://mrzool.cc>
 # Repository: https://github.com/mrzool/bash-sensible
@@ -17,7 +15,7 @@ fi
 
 # Prevent file overwrite on stdout redirection
 # Use `>|` to force redirection to an existing file
-# set -o noclobber
+set -o noclobber
 
 # Update window size after every command
 shopt -s checkwinsize
