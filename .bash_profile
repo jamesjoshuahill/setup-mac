@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-# Configure bash history
-shopt -s histappend   # Append instead of overwrite
+# Sensible bash
+# shellcheck disable=SC1090
+source "$HOME/sensible.bash"
 
 # Enable bash completion
 # shellcheck disable=SC1091

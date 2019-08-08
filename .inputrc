@@ -1,8 +1,0 @@
-$if Bash
-  "\e[B": history-search-forward
-  "\e[A": history-search-backward
-  Space: magic-space
-$endif
-
-set completion-ignore-case On
-set show-all-if-ambiguous on
