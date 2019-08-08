@@ -11,6 +11,9 @@ source "$HOME/sensible.bash"
 # Add ~/bin to path
 PATH="$HOME/bin:$PATH"
 
+# Use GNU make
+PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+
 # Add workspace to CDPATH
 CDPATH=".:$HOME/workspace"
 
