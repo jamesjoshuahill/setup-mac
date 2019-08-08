@@ -7,13 +7,20 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 
 ## Fresh install
 
-1. Generate an SSH key with this [script](https://github.com/jamesjoshuahill/setup/blob/master/bin/generate-ssh-key)
+1. Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for the new Mac.
+1. Set up the bare repository in `~/.setup`
     ```
-    generate-ssh-key some.one@example.com
+    git clone --bare https://github.com/jamesjoshuahill/setup.git "$HOME/.setup/"
+    alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
+    setup-git config status.showUntrackedFiles no
     ```
-1. Clone this repo into `~/.setup`
+1. Update files in the home directory
     ```
-    git clone git@github.com:jamesjoshuahill/setup.git ~/.setup/
+    setup-git checkout
+    ```
+1. Run the update script
+    ```
+    ./update.sh
     ```
 
 ## Daily
@@ -32,10 +39,6 @@ Check for changes:
 ```
 setup-git status
 ```
-
-Note: the bare git repo is configured not to show untracked files, because only
-a few files need to be tracked. So remember to check if there are any new files
-you want to record.
 
 Record changes:
 ```
