@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC1090,1091
 
 # Sensible bash
-# shellcheck disable=SC1090
 source "$HOME/sensible.bash"
 
-# Enable bash completion
-# shellcheck disable=SC1091
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+# Add workspace to CDPATH
+CDPATH=".:$HOME/workspace"
+
+# Aliases
+source "$HOME/aliases.sh"
 
 # Add ~/bin to path
 PATH="$HOME/bin:$PATH"
@@ -14,25 +16,17 @@ PATH="$HOME/bin:$PATH"
 # Use GNU make
 PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
-# Add workspace to CDPATH
-CDPATH=".:$HOME/workspace"
-
-# Enable direnv
-eval "$(direnv hook bash)"
-
-# Enable rbenv
-eval "$(rbenv init -)"
-
 # Go
 export PATH="$HOME/go/bin:$PATH"
 
-# Aliases
-alias ll='ls -alGh'
+# Ruby
+eval "$(rbenv init -)"
 
-# Setup
-# https://www.atlassian.com/git/tutorials/dotfiles
-alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
-alias s='setup-git'
+# direnv
+eval "$(direnv hook bash)"
+
+# Enable bash completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Prompt
 export PS1='\[\033[93;1m\]\w\[\033[0m\] '
