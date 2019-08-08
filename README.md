@@ -53,3 +53,4 @@ setup-git push
 - [Gerhard Lazu's setup](https://github.com/gerhard/setup)
 - [Pivotal's workstation-setup](https://github.com/pivotal/workstation-setup)
 - [The best way to store your dotfiles: A bare Git repository](https://www.atlassian.com/git/tutorials/dotfiles).
+- [Sensible Bash](https://github.com/mrzool/bash-sensible)
