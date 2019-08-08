@@ -8,6 +8,9 @@ source "$HOME/sensible.bash"
 # shellcheck disable=SC1091
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
+# Add ~/bin to path
+PATH="$HOME/bin:$PATH"
+
 # Enable rbenv
 eval "$(rbenv init -)"
 
