@@ -19,6 +19,8 @@ main() {
   set_global_ruby
   update_ruby_gems
 
+  install_stable_go
+
   install_atom_packages
 
   finish
@@ -112,6 +114,11 @@ update_ruby_gems() {
   gem install bundler
   gem install irb
   gem install rspec
+}
+
+install_stable_go() {
+  log "** Install stable Go"
+  gimme stable
 }
 
 install_atom_packages() {
