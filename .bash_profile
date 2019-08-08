@@ -11,15 +11,18 @@ source "$HOME/sensible.bash"
 # Add ~/bin to path
 PATH="$HOME/bin:$PATH"
 
+# Add workspace to CDPATH
+CDPATH=".:$HOME/workspace"
+
+# Enable direnv
+eval "$(direnv hook bash)"
+
 # Enable rbenv
 eval "$(rbenv init -)"
 
 # Go
 GOBIN="$(go env GOPATH)/bin"
 export PATH="$PATH:$GOBIN"
-
-# Add workspace to CDPATH
-CDPATH=".:$HOME/workspace"
 
 # Aliases
 alias ll='ls -alGh'

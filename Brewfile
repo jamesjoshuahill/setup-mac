@@ -12,6 +12,7 @@ brew 'tree'
 brew 'watch'
 brew 'jq'
 brew 'the_silver_searcher'
+brew 'direnv'
 
 # Editors
 cask 'atom'
