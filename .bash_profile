@@ -11,6 +11,9 @@ source "$HOME/sensible.bash"
 # Enable rbenv
 eval "$(rbenv init -)"
 
+# Add workspace to CDPATH
+CDPATH=".:$HOME/workspace"
+
 # Aliases
 alias ll='ls -alGh'
 
