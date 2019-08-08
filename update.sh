@@ -20,6 +20,8 @@ main() {
   set_global_ruby
   update_ruby_gems
 
+  install_atom_packages
+
   finish
 }
 
@@ -117,6 +119,13 @@ update_ruby_gems() {
   gem install bundler
   gem install irb
   gem install rspec
+}
+
+install_atom_packages() {
+  log "** Install Atom packages"
+  # Update package.txt:
+  # apm list --installed --bare > "$HOME/.atom/packages.txt"
+  apm install --production --packages-file "$HOME/.atom/packages.txt"
 }
 
 finish() {
