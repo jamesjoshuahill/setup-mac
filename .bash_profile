@@ -21,8 +21,7 @@ eval "$(direnv hook bash)"
 eval "$(rbenv init -)"
 
 # Go
-GOBIN="$(go env GOPATH)/bin"
-export PATH="$PATH:$GOBIN"
+export PATH="$HOME/go/bin:$PATH"
 
 # Aliases
 alias ll='ls -alGh'
