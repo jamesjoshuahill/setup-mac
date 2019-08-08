@@ -8,7 +8,7 @@ source "$HOME/sensible.bash"
 CDPATH=".:$HOME/workspace"
 
 # Aliases
-source "$HOME/aliases.sh"
+source "$HOME/.aliases.sh"
 
 # Add ~/bin to path
 PATH="$HOME/bin:$PATH"
