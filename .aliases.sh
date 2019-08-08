@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+alias reload='source "$HOME/.profile"'
 alias ll='ls -alGh'
 alias da='direnv allow'
 
