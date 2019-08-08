@@ -9,39 +9,35 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 
 1. Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for the new Mac.
 1. Set up the bare repository in `~/.setup`
-    ```
+    ```bash
     git clone --bare https://github.com/jamesjoshuahill/setup.git "$HOME/.setup/"
     alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
     setup-git config status.showUntrackedFiles no
     ```
 1. Update files in the home directory
-    ```
+    ```bash
     setup-git checkout
     ```
 1. Run the update script
-    ```
+    ```bash
     ./update.sh
     ```
 
 ## Daily
 
-### Update everything
-
-Run the update script regularly to update everything to the latest versions:
-```
+Run the update script regularly to update to the latest versions:
+```bash
 cd
 ./update.sh
 ```
 
-### Record changes
-
-Check for changes:
-```
+Check for changes to config:
+```bash
 setup-git status
 ```
 
-Record changes:
-```
+Check in changes:
+```bash
 setup-git add -p            # stage changes
 setup-git add NEW_FILE      # track a new file
 setup-git commit -m "..."
