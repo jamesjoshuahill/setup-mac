@@ -4,7 +4,6 @@ set -euo pipefail
 
 main() {
   start
-  cache_password
 
   update_macos
   configure_macos
@@ -32,12 +31,6 @@ log()  {
 
 start() {
   log "** Start update"
-}
-
-cache_password() {
-  log "** Cache password"
-  sudo -K
-  sudo true;
 }
 
 update_macos() {
