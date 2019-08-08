@@ -2,14 +2,14 @@
 # shellcheck disable=SC1090,1091
 
 # Sensible bash
-source "$HOME/.sensible.bash"
+source "$HOME/.sensible"
 set +o noclobber
 
 # Add workspace to CDPATH
 CDPATH=".:$HOME/workspace"
 
 # Aliases
-source "$HOME/.aliases.sh"
+source "$HOME/.aliases"
 
 # Add ~/bin to path
 PATH="$HOME/bin:$PATH"
