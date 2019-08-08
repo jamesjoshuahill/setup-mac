@@ -123,8 +123,6 @@ update_ruby_gems() {
 
 install_atom_packages() {
   log "** Install Atom packages"
-  # Update package.txt:
-  # apm list --installed --bare > "$HOME/.atom/packages.txt"
   apm install --production --packages-file "$HOME/.atom/packages.txt"
 }
 
