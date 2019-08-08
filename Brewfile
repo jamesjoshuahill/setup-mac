@@ -12,10 +12,14 @@ brew 'tree'
 
 # Editors
 cask 'atom'
+cask 'goland'
 
 # Ruby
 brew 'rbenv'
 brew 'rbenv-default-gems'
+
+# Go
+brew 'gimme'
 
 # macOS tools
 cask 'spectacle'

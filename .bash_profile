@@ -14,6 +14,10 @@ PATH="$HOME/bin:$PATH"
 # Enable rbenv
 eval "$(rbenv init -)"
 
+# Go
+GOBIN="$(go env GOPATH)/bin"
+export PATH="$PATH:$GOBIN"
+
 # Add workspace to CDPATH
 CDPATH=".:$HOME/workspace"
 
