@@ -9,6 +9,9 @@ brew 'diff-so-fancy'
 
 # Command line tools
 brew 'tree'
+brew 'watch'
+brew 'jq'
+brew 'the_silver_searcher'
 
 # Editors
 cask 'atom'
