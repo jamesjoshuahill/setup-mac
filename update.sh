@@ -92,13 +92,14 @@ remove_icons_from_dock() {
 }
 
 set_shell() {
-  log "** Change user shell"
+  log "** Set shell"
   if ! grep "/usr/local/bin/bash" /etc/shells > /dev/null 2>&1; then
     echo '/usr/local/bin/bash' | sudo tee -a /etc/shells > /dev/null
     echo "Added Homebrew bash to system shells."
   fi
 
   sudo chsh -s /usr/local/bin/bash
+  chsh -s /usr/local/bin/bash
 }
 
 set_global_ruby() {
