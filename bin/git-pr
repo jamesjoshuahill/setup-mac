@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+set -eu
+
+id_or_url=${1:-}
+
+if [ -z "$id_or_url" ]; then
+  echo "Must provide a pull request ID or URL"
+  exit 1
+fi
+
+if [[ $id_or_url =~ github.com ]]; then
+  id=$(echo "$id_or_url" | cut -d '/' -f 7)
+else
+  id=$id_or_url
+fi
+
+local_branch=pr/$id
+git fetch -fu origin "pull/$id/head:$local_branch"
+git co "$local_branch"
