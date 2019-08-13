@@ -40,6 +40,5 @@ cask 'slack'
 cask 'zoomus'
 
 # Fonts
-tap 'homebrew/cask-fonts'
-cask 'font-inconsolata'
-cask 'font-inconsolata-for-powerline'
+cask 'homebrew/cask-fonts/font-inconsolata'
+cask 'homebrew/cask-fonts/font-inconsolata-for-powerline'
