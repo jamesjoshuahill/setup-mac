@@ -120,6 +120,7 @@ update_ruby_gems() {
   gem install bundler
   gem install irb
   gem install rspec
+  gem install pry
 }
 
 install_stable_go() {
