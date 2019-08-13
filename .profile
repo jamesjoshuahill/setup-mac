@@ -30,4 +30,4 @@ eval "$(direnv hook bash)"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Prompt
-export PS1='\[\033[93;1m\]\w\[\033[0m\] '
+export PS1='\[\033[34;1m\]\w\[\033[0m\] '
