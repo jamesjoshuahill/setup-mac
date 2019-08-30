@@ -3,12 +3,14 @@
 
 # Sensible bash
 source "$HOME/.sensible"
+
+# Allow overwriting files on stdout redirection '>'
 set +o noclobber
 
-# Add workspace to CDPATH
+# Add ~/workspace to CDPATH
 CDPATH=".:$HOME/workspace"
 
-# Aliases
+# Load aliases
 source "$HOME/.aliases"
 
 # Add ~/bin to path
