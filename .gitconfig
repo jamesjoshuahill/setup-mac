@@ -1,6 +1,3 @@
-[user]
-	name = Josh Hill
-	email = josh.hill@makers.tech
 [alias]
 	br = branch
 	ci = commit
@@ -15,10 +12,6 @@
 	rs = reset
 	rb = rebase
 	st = status
-[commit]
-	verbose = true
-[core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -33,5 +26,12 @@
 	old = red
 	new = green
 	whitespace = red reverse
+[commit]
+	verbose = true
+[core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
 	helper = osxkeychain
+[user]
+	name = Josh Hill
+	email = josh.hill@makers.tech
