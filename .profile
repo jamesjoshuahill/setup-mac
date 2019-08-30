@@ -20,6 +20,7 @@ PATH="$HOME/bin:$PATH"
 PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
 
 # Go
+eval "$(gimme stable)"
 export PATH="$HOME/go/bin:$PATH"
 
 # Ruby
