@@ -68,7 +68,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>92 341 918 494 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 11 2560 687 0 0 2560 1417 </string>
+	<string>1282 0 1275 1417 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -683,7 +683,7 @@
 				<key>advanced configuration</key>
 				<dict>
 					<key>algorithm</key>
-					<integer>1</integer>
+					<integer>0</integer>
 					<key>font</key>
 					<string>InconsolataForPowerline 20</string>
 				</dict>
@@ -711,19 +711,19 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.80000000000000004</real>
+									<real>0.25</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.80000000000000004</real>
+									<real>0.25</real>
 									<key>Red Component</key>
-									<real>0.80000000000000004</real>
+									<real>0.5</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
 								<key>algorithm</key>
-								<integer>1</integer>
+								<integer>0</integer>
 								<key>font</key>
 								<string>InconsolataForPowerline 20</string>
 							</dict>
@@ -778,7 +778,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>34116E62-0CD4-4A8A-8B6D-3873F2A8B8B9</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>4</integer>
+	<integer>7</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
