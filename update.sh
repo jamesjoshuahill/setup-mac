@@ -134,7 +134,7 @@ install_atom_packages() {
 }
 
 finish() {
-  log "** Update finished"
+  log "** Finished update"
   echo
 }
 
