@@ -16,3 +16,5 @@
     enableNotice: true
   welcome:
     showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
