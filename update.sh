@@ -16,7 +16,7 @@ main() {
   remove_icons_from_dock
   set_shell
 
-  set_global_ruby
+  install_ruby
   update_ruby_gems
 
   install_stable_go
@@ -105,8 +105,8 @@ set_shell() {
   chsh -s /usr/local/bin/bash
 }
 
-set_global_ruby() {
-  log "** Set global Ruby"
+install_ruby() {
+  log "** Install Ruby"
   local version="2.6.3"
   eval "$(rbenv init -)"
   rbenv install $version --skip-existing
