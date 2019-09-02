@@ -20,15 +20,14 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     ```
 1. Run the update script
     ```bash
-    ./update.sh
+    ~/bin/update-mac
     ```
 
 ## Daily
 
 Run the update script regularly to update to the latest versions:
 ```bash
-cd
-./update.sh
+update-mac
 ```
 
 Check for changes to config:
