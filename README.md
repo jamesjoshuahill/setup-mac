@@ -35,13 +35,23 @@ Check for changes to config:
 setup-git status
 ```
 
-Check in changes:
+Check in changes to tracked configuration:
 ```bash
 setup-git add -p            # stage changes
+```
+
+Track new configuration:
+```bash
 setup-git add NEW_FILE      # track a new file
+```
+
+Commit and push:
+```bash
 setup-git commit -m "..."
 setup-git push
 ```
+
+> ℹ️ You can use the Bash alias `s` for `setup-git` and the Git aliases for shorter commands: `s st`, `s add -p`.
 
 ## Acknowledgements
 
