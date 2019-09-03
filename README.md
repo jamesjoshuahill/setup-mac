@@ -22,6 +22,12 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     ```bash
     ~/bin/update-mac
     ```
+1. Restart and re-run update script to install all macOS updates
+1. Load iTerm preferences
+    - Open iTerm
+    - Open Preferences > General > Preferences
+    - Set home directory for: Load preferences from a custom folder or URL
+    - Check: Save changes to folder when iTerm2 quits
 
 ## Daily
 
