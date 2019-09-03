@@ -1,4 +1,4 @@
-# setup
+# setup-mac
 
 This repo records the configuration of my Mac. It can be used to set up a new
 Mac and keep it up to date.
@@ -10,7 +10,7 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 1. Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for the new Mac.
 1. Set up the bare repository in `~/.setup`
     ```bash
-    git clone --bare https://github.com/jamesjoshuahill/setup.git "$HOME/.setup/"
+    git clone --bare https://github.com/jamesjoshuahill/setup-mac.git "$HOME/.setup/"
     alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
     setup-git config status.showUntrackedFiles no
     ```
