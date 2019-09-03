@@ -28,20 +28,20 @@ main() {
 
 log()  {
   local message=$1
-  echo -e "\e[1m${message}\e[0m"
+  echo -e "\e[1m--> ${message}\e[0m"
 }
 
 start() {
-  log "** Start update"
+  log "Start update"
 }
 
 update_macos() {
-  log "** Update macOS"
+  log "Update macOS"
   softwareupdate --install --all
 }
 
 configure_macos() {
-  log "** Configure macOS"
+  log "Configure macOS"
   # set menu clock
   # see http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns
   defaults write com.apple.menuextra.clock "DateFormat" 'EEE d MMM  h:mm a'
@@ -57,7 +57,7 @@ configure_macos() {
 }
 
 install_brew() {
-  log "** Install Homebrew"
+  log "Install Homebrew"
   if hash brew 2>/dev/null; then
     echo "Homebrew already installed."
     return
@@ -67,29 +67,29 @@ install_brew() {
 }
 
 update_brew() {
-  log "** Update Homebrew"
+  log "Update Homebrew"
   brew update
 }
 
 update_brew_bundle() {
-  log "** Update Homebrew Bundle"
+  log "Update Homebrew Bundle"
   brew bundle --verbose
 }
 
 cleanup_brew() {
-  log "** Cleanup Homebrew"
+  log "Cleanup Homebrew"
   brew cleanup
 }
 
 remove_icons_from_dock() {
-  log "** Remove icons from dock"
+  log "Remove icons from dock"
   set +o pipefail
   dockutil --list | cut -d"$(printf '\t')" -f1 | grep -v Downloads | xargs -n1 dockutil --remove --no-restart
   set -o pipefail
 }
 
 set_shell() {
-  log "** Set shell"
+  log "Set shell"
   local homebrew_bash="/usr/local/bin/bash"
   if ! grep $homebrew_bash /etc/shells > /dev/null 2>&1; then
     echo $homebrew_bash | sudo tee -a /etc/shells > /dev/null
@@ -106,7 +106,7 @@ set_shell() {
 }
 
 install_ruby() {
-  log "** Install Ruby"
+  log "Install Ruby"
   local version="2.6.3"
   eval "$(rbenv init -)"
   rbenv install $version --skip-existing
@@ -114,7 +114,7 @@ install_ruby() {
 }
 
 update_ruby_gems() {
-  log "** Update Ruby Gems"
+  log "Update Ruby Gems"
   gem update --system
 
   gem install bundler
@@ -124,17 +124,17 @@ update_ruby_gems() {
 }
 
 install_stable_go() {
-  log "** Install stable Go"
+  log "Install stable Go"
   gimme stable
 }
 
 install_atom_packages() {
-  log "** Install Atom packages"
+  log "Install Atom packages"
   apm install --production --packages-file "$HOME/.atom/packages.txt"
 }
 
 finish() {
-  log "** Finished update"
+  log "Finished update"
   echo
 }
 
