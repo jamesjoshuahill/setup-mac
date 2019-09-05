@@ -27,6 +27,9 @@ brew 'rbenv-default-gems'
 # Go
 brew 'gimme'
 
+# Database
+brew 'postgresql'
+
 # macOS tools
 cask 'spectacle'
 cask 'flycut'
