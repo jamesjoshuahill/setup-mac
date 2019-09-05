@@ -19,7 +19,7 @@ main() {
   install_ruby
   update_ruby_gems
 
-  install_stable_go
+  install_go
 
   install_atom_packages
 
@@ -123,9 +123,10 @@ update_ruby_gems() {
   gem install pry
 }
 
-install_stable_go() {
-  log "Install stable Go"
-  gimme stable
+install_go() {
+  local version="1.13"
+  log "Install Go ${version}"
+  gimme $version
 }
 
 install_atom_packages() {
