@@ -22,6 +22,7 @@ main() {
   install_go
 
   install_atom_packages
+  upgrade_atom_packages
 
   finish
 }
@@ -132,6 +133,11 @@ install_go() {
 install_atom_packages() {
   log "Install Atom packages"
   apm install --production --packages-file "$HOME/.atom/packages.txt"
+}
+
+upgrade_atom_packages() {
+  log "Update Atom packages"
+  apm upgrade --production --packages-file "$HOME/.atom/packages.txt" --confirm false
 }
 
 finish() {
