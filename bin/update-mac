@@ -106,8 +106,8 @@ set_shell() {
 }
 
 install_ruby() {
-  log "Install Ruby"
   local version="2.6.3"
+  log "Install Ruby ${version}"
   eval "$(rbenv init -)"
   rbenv install $version --skip-existing
   rbenv global $version
