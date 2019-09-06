@@ -21,6 +21,8 @@ main() {
 
   install_go
 
+  install_node
+
   install_atom_packages
   upgrade_atom_packages
 
@@ -128,6 +130,17 @@ install_go() {
   local version="1.13"
   log "Install Go ${version}"
   gimme $version
+}
+
+install_node() {
+  local version="10.16.3"
+  log "Install Node.js ${version}"
+
+  export NVM_DIR="$HOME/.nvm"
+  # shellcheck disable=SC1091
+  source "/usr/local/opt/nvm/nvm.sh"
+
+  nvm install $version
 }
 
 install_atom_packages() {

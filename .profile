@@ -26,6 +26,10 @@ export PATH="$HOME/go/bin:$PATH"
 # Ruby
 eval "$(rbenv init -)"
 
+# Node.js
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+
 # direnv
 eval "$(direnv hook bash)"
 

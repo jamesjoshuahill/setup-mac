@@ -27,6 +27,9 @@ brew 'rbenv-default-gems'
 # Go
 brew 'gimme'
 
+# Node.js
+brew 'nvm'
+
 # Database
 brew 'postgresql'
 
