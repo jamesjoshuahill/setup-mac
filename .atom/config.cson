@@ -14,6 +14,8 @@
     userId: "17ed2d75-2536-4685-b577-f00046a26f98"
   "linter-shellcheck":
     enableNotice: true
+  "linter-ui-default":
+    showPanel: true
   welcome:
     showOnStartup: false
   whitespace:
