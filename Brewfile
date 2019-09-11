@@ -30,8 +30,9 @@ brew 'gimme'
 # Node.js
 brew 'nvm'
 
-# Database
+# Databases
 brew 'postgresql'
+brew 'mongodb/brew/mongodb-community'
 
 # macOS tools
 cask 'spectacle'
