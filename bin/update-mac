@@ -89,6 +89,7 @@ start_brew_services() {
 cleanup_brew() {
   log "Cleanup Homebrew"
   brew cleanup
+  brew services cleanup
 }
 
 remove_icons_from_dock() {
