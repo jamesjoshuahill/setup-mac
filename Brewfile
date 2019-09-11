@@ -31,8 +31,8 @@ brew 'gimme'
 brew 'nvm'
 
 # Databases
-brew 'postgresql'
-brew 'mongodb/brew/mongodb-community'
+brew 'postgresql', restart_service: :changed
+brew 'mongodb/brew/mongodb-community', restart_service: :changed
 
 # macOS tools
 cask 'spectacle'
