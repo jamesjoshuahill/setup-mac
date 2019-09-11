@@ -15,6 +15,7 @@
   "linter-shellcheck":
     enableNotice: true
   "linter-ui-default":
+    panelHeight: 136
     showPanel: true
   welcome:
     showOnStartup: false
