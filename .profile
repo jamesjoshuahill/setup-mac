@@ -7,8 +7,8 @@ source "$HOME/.sensible"
 # Allow overwriting files on stdout redirection '>'
 set +o noclobber
 
-# Add ~/workspace to CDPATH
-CDPATH=".:$HOME/workspace"
+# Add ~/projects to CDPATH
+CDPATH=".:$HOME/projects"
 
 # Load aliases
 source "$HOME/.aliases"
