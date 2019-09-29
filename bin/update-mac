@@ -158,7 +158,7 @@ install_atom_packages() {
 }
 
 upgrade_atom_packages() {
-  log "Update Atom packages"
+  log "Upgrade Atom packages"
   apm upgrade --production --packages-file "$HOME/.atom/packages.txt" --confirm false
 }
 
