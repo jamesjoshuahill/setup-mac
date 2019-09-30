@@ -17,6 +17,8 @@
   "linter-ui-default":
     panelHeight: 136
     showPanel: true
+  "markdown-preview":
+    useGitHubStyle: true
   welcome:
     showOnStartup: false
   whitespace:
