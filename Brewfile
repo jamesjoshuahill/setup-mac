@@ -6,6 +6,7 @@ brew 'shellcheck'
 # git
 brew 'git'
 brew 'diff-so-fancy'
+brew 'hub'
 
 # Command line tools
 brew 'tree'
