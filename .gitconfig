@@ -11,6 +11,7 @@
 	pl = pull --rebase
 	rs = reset
 	rb = rebase
+	re = remote
 	st = status
 [color]
 	ui = true
