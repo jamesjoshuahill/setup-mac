@@ -19,6 +19,8 @@
     showPanel: true
   "markdown-preview":
     useGitHubStyle: true
+  "markdown-table-editor":
+    formatOnSave: true
   welcome:
     showOnStartup: false
   whitespace:
