@@ -10,6 +10,7 @@
   editor:
     fontFamily: "Inconsolata for Powerline, Menlo, Consolas, DejaVu Sans Mono, monospace"
     fontSize: 20
+    scrollPastEnd: true
   "exception-reporting":
     userId: "17ed2d75-2536-4685-b577-f00046a26f98"
   "linter-shellcheck":
