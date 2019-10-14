@@ -16,6 +16,7 @@ brew 'the_silver_searcher'
 brew 'direnv'
 brew 'make'
 brew 'heroku/brew/heroku'
+brew 'httpie'
 
 # Editors
 cask 'atom'
