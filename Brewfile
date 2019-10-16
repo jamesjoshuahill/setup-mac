@@ -17,6 +17,7 @@ brew 'direnv'
 brew 'make'
 brew 'heroku/brew/heroku'
 brew 'httpie'
+brew 'telnet'
 
 # Editors
 cask 'atom'
