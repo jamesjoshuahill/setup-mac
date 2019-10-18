@@ -13,6 +13,8 @@
     scrollPastEnd: true
   "exception-reporting":
     userId: "17ed2d75-2536-4685-b577-f00046a26f98"
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
   "linter-shellcheck":
     enableNotice: true
   "linter-ui-default":
