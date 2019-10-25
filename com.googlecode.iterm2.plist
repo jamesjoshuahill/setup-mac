@@ -68,7 +68,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>92 341 918 494 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 235 890 642 0 0 1440 877 </string>
+	<string>3 0 714 877 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>165 235 890 642 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -641,7 +641,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>InconsolataForPowerline 21</string>
+			<string>SFMono-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1336,7 +1336,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>InconsolataForPowerline 21</string>
+			<string>SFMono-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1463,19 +1463,24 @@
 		<string>3.2.9</string>
 		<string>3.3.1</string>
 	</array>
+	<key>NoSyncBFPRecents</key>
+	<array>
+		<string>Inconsolata for Powerline</string>
+		<string>SF Mono</string>
+	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{208, 720}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>34116E62-0CD4-4A8A-8B6D-3873F2A8B8B9</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>49</integer>
+	<integer>77</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
