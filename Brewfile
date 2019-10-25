@@ -9,15 +9,15 @@ brew 'diff-so-fancy'
 brew 'hub'
 
 # Command line tools
-brew 'tree'
-brew 'watch'
-brew 'jq'
-brew 'the_silver_searcher'
 brew 'direnv'
-brew 'make'
 brew 'heroku/brew/heroku'
 brew 'httpie'
+brew 'jq'
 brew 'telnet'
+brew 'the_silver_searcher'
+brew 'tree'
+brew 'make'
+brew 'watch'
 
 # Editors
 cask 'atom'
@@ -34,17 +34,17 @@ brew 'gimme'
 brew 'nvm'
 
 # Databases
-brew 'postgresql', restart_service: :changed
 brew 'mongodb/brew/mongodb-community', restart_service: :changed
+brew 'postgresql', restart_service: :changed
 
 # macOS tools
-cask 'spectacle'
-cask 'flycut'
 brew 'dockutil'
+cask 'flycut'
+cask 'spectacle'
 
 # Apps
-cask 'iterm2'
 cask '1password'
 cask 'google-chrome'
+cask 'iterm2'
 cask 'slack'
 cask 'zoomus'
