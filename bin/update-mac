@@ -135,7 +135,7 @@ update_ruby_gems() {
 }
 
 install_go() {
-  local version="1.13.1"
+  local version="1.13.3"
   log "Install Go ${version}"
   gimme $version
 }
