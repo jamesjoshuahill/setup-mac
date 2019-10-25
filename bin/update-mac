@@ -52,8 +52,12 @@ configure_macos() {
   defaults write com.apple.menuextra.clock "DateFormat" 'EEE d MMM  h:mm a'
   killall SystemUIServer
 
-  # hide the dock
+  # dock
+  # - turn hiding on
   defaults write com.apple.dock autohide -bool true
+  # - do not show recent applications
+  defaults write com.apple.dock show-recents -bool FALSE
+  # - restart with new configuration
   killall Dock
 
   # fast key repeat rate, requires reboot to take effect
