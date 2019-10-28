@@ -10,6 +10,7 @@ brew 'hub'
 
 # Command line tools
 brew 'direnv'
+brew 'exercism'
 brew 'heroku/brew/heroku'
 brew 'httpie'
 brew 'jq'
