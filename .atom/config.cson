@@ -17,9 +17,7 @@
     disableWhenNoConfigFile: true
   "linter-shellcheck":
     enableNotice: true
-  "linter-ui-default":
-    panelHeight: 136
-    showPanel: true
+  "linter-ui-default": {}
   "markdown-preview":
     useGitHubStyle: true
   "markdown-table-editor":
