@@ -33,6 +33,9 @@ export NVM_DIR="$HOME/.nvm"
 # direnv
 eval "$(direnv hook bash)"
 
+# git-author
+export GIT_TOGETHER_NO_SIGNOFF=1  # Use 'Co-authored by: '
+
 # Enable bash completion
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
