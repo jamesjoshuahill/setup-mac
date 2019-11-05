@@ -104,8 +104,9 @@ cleanup_brew() {
 remove_icons_from_dock() {
   log "Remove icons from dock"
   set +o pipefail
-  dockutil --list | cut -d"$(printf '\t')" -f1 | grep -v Downloads | xargs -n1 dockutil --remove --no-restart
+  dockutil --list | cut -d"$(printf '\t')" -f1 | grep -v Downloads | xargs -I{} dockutil --remove '{}' --no-restart
   set -o pipefail
+  killall Dock
 }
 
 set_shell() {
