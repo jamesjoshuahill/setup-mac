@@ -33,7 +33,7 @@ main() {
 
 log()  {
   local message=$1
-  echo -e "\e[1m--> ${message}\e[0m"
+  echo -e "\033[1m--> ${message}\033[0m"
 }
 
 start() {
