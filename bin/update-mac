@@ -47,7 +47,7 @@ update_macos() {
 
 configure_macos() {
   log "Configure macOS"
-  # set menu clock
+  # set menu clock format
   # see http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns
   defaults write com.apple.menuextra.clock "DateFormat" 'EEE d MMM  h:mm a'
   killall SystemUIServer
@@ -60,9 +60,14 @@ configure_macos() {
   # - restart with new configuration
   killall Dock
 
-  # fast key repeat rate, requires reboot to take effect
+  # keyboard fast key repeat, requires reboot to take effect
   defaults write "$HOME/Library/Preferences/.GlobalPreferences" KeyRepeat -int 1
   defaults write "$HOME/Library/Preferences/.GlobalPreferences" InitialKeyRepeat -int 15
+
+  # trackpad enable tap to click, requires logout and login to take effect
+  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+  defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+  defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 }
 
 install_sf_mono_font() {
