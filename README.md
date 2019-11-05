@@ -59,6 +59,11 @@ Track new configuration:
 setup-git add NEW_FILE      # track a new file
 ```
 
+Update the Atom package list:
+```bash
+update-atom-package-list
+```
+
 Commit and push:
 ```bash
 setup-git commit -m "..."
