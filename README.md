@@ -67,6 +67,13 @@ setup-git push
 
 > ℹ️ You can use the Bash alias `s` for `setup-git` and the Git aliases for shorter commands: `s st`, `s add -p`.
 
+## Monthly
+
+Update the pinned versions in the update script:
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Node.js](https://nodejs.org/en/)
+- [Go](https://golang.org)
+
 ## Acknowledgements
 
 - [Gerhard Lazu's setup](https://github.com/gerhard/setup)
