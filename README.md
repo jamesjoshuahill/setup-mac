@@ -7,7 +7,10 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 
 ## Fresh install
 
-1. Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for the new Mac.
+1. Install command line tools
+    ```bash
+    xcode-select --install
+    ```
 1. Set up the bare repository in `~/.setup`
     ```bash
     git clone --bare https://github.com/jamesjoshuahill/setup-mac.git "$HOME/.setup/"
@@ -23,11 +26,16 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     ~/bin/update-mac
     ```
 1. Restart and re-run update script to install all macOS updates
-1. Load iTerm preferences
-    - Open iTerm
-    - Open Preferences > General > Preferences
-    - Set home directory for: Load preferences from a custom folder or URL
-    - Check: Save changes to folder when iTerm2 quits
+1. Load iTerm preferences:
+    - Tick: General > Preferences > Load preferences from a custom folder or URL and select the home directory.
+    - Tick: General > Preferences > Save changes to folder when iTerm2 quits
+1. Spectacle preferences:
+    - Tick: Launch Spectacle at login
+1. Flycut preferences:
+    - Tick: General > Launch Flycut at login
+1. Save GitHub credentials:
+    - Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for the new Mac with the `repo` scope.
+    - Run a git command on a private repo and enter GitHub credentials. They will be saved in the keychain.
 
 ## Daily
 
