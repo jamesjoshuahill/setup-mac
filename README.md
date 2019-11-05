@@ -59,11 +59,6 @@ Track new configuration:
 setup-git add NEW_FILE      # track a new file
 ```
 
-Update the Atom package list:
-```bash
-update-atom-package-list
-```
-
 Commit and push:
 ```bash
 setup-git commit -m "..."
@@ -71,6 +66,11 @@ setup-git push
 ```
 
 > ℹ️ You can use the Bash alias `s` for `setup-git` and the Git aliases for shorter commands: `s st`, `s add -p`.
+
+Update the Atom package list:
+```bash
+update-atom-package-list    # updates ~/.atom/packages.txt
+```
 
 ## Monthly
 
