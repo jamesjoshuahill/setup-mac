@@ -30,7 +30,7 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 ### Manual configuration
 
 1. Load iTerm preferences:
-    - Tick: General > Preferences > Load preferences from a custom folder or URL and select the home directory.
+    - Tick: General > Preferences > Load preferences from a custom folder or URL and select the `~/.iterm` directory.
     - Tick: General > Preferences > Save changes to folder when iTerm2 quits
 1. Spectacle preferences:
     - Tick: Launch Spectacle at login
