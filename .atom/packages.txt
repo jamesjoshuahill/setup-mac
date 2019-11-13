@@ -7,5 +7,6 @@ linter-rubocop@2.5.2
 linter-shellcheck@1.6.0
 linter-ui-default@1.8.0
 markdown-table-editor@1.1.2
+pretty-json@2.1.2
 split-diff@1.6.1
 
