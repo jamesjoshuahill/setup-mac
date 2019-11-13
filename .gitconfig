@@ -9,7 +9,7 @@
 	lga = !git lg --all
 	pf = push --force-with-lease
 	pl = pull --rebase
-	rs = reset
+	rs = restore --staged
 	rb = rebase
 	re = remote
 	st = status
