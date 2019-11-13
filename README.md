@@ -84,10 +84,12 @@ update-atom-package-list    # updates ~/.atom/packages.txt
 
 ## Monthly
 
-Update the pinned versions in the update script:
+Update the pinned versions in `~/bin/update-mac`:
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Node.js](https://nodejs.org/en/)
 - [Go](https://golang.org)
+
+Update [Sensible Bash](https://github.com/mrzool/bash-sensible) in `~/.sensible`.
 
 ## Acknowledgements
 
