@@ -32,8 +32,8 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 - Load iTerm preferences:
     - Tick: General > Preferences > Load preferences from a custom folder or URL and select the `~/.iterm` directory.
     - Tick: General > Preferences > Save changes to folder when iTerm2 quits
-- Spectacle preferences:
-    - Tick: Launch Spectacle at login
+- Rectangle preferences:
+    - Tick: Settings > Launch on login
 - Flycut preferences:
     - Tick: General > Launch Flycut at login
 - Save GitHub credentials:

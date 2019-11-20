@@ -42,7 +42,7 @@ brew 'postgresql', restart_service: :changed
 # macOS tools
 brew 'dockutil'
 cask 'flycut'
-cask 'spectacle'
+cask 'rectangle'
 
 # Apps
 cask '1password'
