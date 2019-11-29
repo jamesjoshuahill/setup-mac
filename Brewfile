@@ -11,6 +11,7 @@ brew 'hub'
 
 # Command line tools
 brew 'direnv'
+brew 'dockutil'
 brew 'exercism'
 brew 'heroku/brew/heroku'
 brew 'httpie'
@@ -40,7 +41,6 @@ brew 'mongodb/brew/mongodb-community', restart_service: :changed
 brew 'postgresql', restart_service: :changed
 
 # macOS tools
-brew 'dockutil'
 cask 'flycut'
 cask 'rectangle'
 
