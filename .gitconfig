@@ -35,6 +35,6 @@
 	helper = osxkeychain
 [user]
 	name = Josh Hill
-	email = josh.hill@makers.tech
+	email = jamesjoshuahill@users.noreply.github.com
 [git-together "authors"]
-	jh = "Josh Hill; josh.hill@makers.tech"
+	jh = "Josh Hill; jamesjoshuahill@users.noreply.github.com"
