@@ -46,6 +46,7 @@ cask 'rectangle'
 
 # Apps
 cask '1password'
+cask 'dropbox'
 cask 'google-chrome'
 cask 'iterm2'
 cask 'slack'
