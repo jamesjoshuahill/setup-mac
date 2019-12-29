@@ -21,11 +21,11 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     ```bash
     setup-git checkout
     ```
-1. Run the update script
+1. Run the setup script
     ```bash
-    ~/bin/update-mac
+    ~/bin/setup-mac
     ```
-1. Restart and re-run update script to install all macOS updates
+1. Restart and re-run setup script to install all macOS updates
 
 ### Manual configuration
 
@@ -51,9 +51,9 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 
 ## Daily
 
-Run the update script regularly to update to the latest versions:
+Run the setup script regularly to update to the latest versions:
 ```bash
-update-mac
+setup-mac
 ```
 
 Check for changes to config:
@@ -86,7 +86,7 @@ update-atom-package-list    # updates ~/.atom/packages.txt
 
 ## Monthly
 
-Update the pinned versions in `~/bin/update-mac`:
+Update the pinned versions in `~/bin/setup-mac`:
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Node.js](https://nodejs.org/en/)
 - [Go](https://golang.org)
