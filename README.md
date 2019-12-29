@@ -44,7 +44,9 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 - System Preferences > Desktop & Screen Saver > Screen Saver
     - Start after '10 min'
     - Hot corners: 'Start Screen Saver' (top right)
-- System Preferences > Security > FileVault
+- System Preferences > Security & Privacy > General
+    - Show a message when the screen is locked
+- System Preferences > Security & Privacy > FileVault
     - Turn on FileVault...
 
 ## Daily
