@@ -75,7 +75,7 @@ configure_macos() {
 }
 
 install_sf_mono_font() {
-  cp /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/SFMono-*.otf "$HOME/Library/Fonts/"
+  cp /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts/SFMono-*.otf "$HOME/Library/Fonts/"
 }
 
 install_brew() {
