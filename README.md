@@ -13,8 +13,8 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     ```
 1. Set up the bare repository in `~/.setup`
     ```bash
-    git clone --bare https://github.com/jamesjoshuahill/setup-mac.git ~/.setup/
-    alias setup-git='git --git-dir="~/.setup/" --work-tree="~"'
+    git clone --bare https://github.com/jamesjoshuahill/setup-mac.git "$HOME/.setup/"
+    alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
     setup-git config status.showUntrackedFiles no
     ```
 1. Update files in the home directory
