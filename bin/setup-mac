@@ -28,6 +28,8 @@ main() {
   install_atom_packages
   upgrade_atom_packages
 
+  create_projects_directory
+
   finish
 }
 
@@ -179,6 +181,10 @@ install_atom_packages() {
 upgrade_atom_packages() {
   log "Upgrade Atom packages"
   apm upgrade --production --packages-file "$HOME/.atom/packages.txt" --confirm false
+}
+
+create_projects_directory() {
+  mkdir -p "$HOME/projects"
 }
 
 finish() {
