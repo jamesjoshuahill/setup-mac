@@ -29,7 +29,6 @@ cask 'goland'
 
 # Ruby
 brew 'rbenv'
-brew 'rbenv-default-gems'
 
 # Go
 brew 'gimme'
