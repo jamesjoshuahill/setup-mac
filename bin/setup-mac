@@ -77,7 +77,15 @@ configure_macos() {
 }
 
 install_sf_mono_font() {
-  cp /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts/SFMono-*.otf "$HOME/Library/Fonts/"
+  log "Install SF Mono font"
+  local source_dir="/Applications/Utilities/Terminal.app/Contents/Resources/Fonts"
+
+  if [ -d "/System/Applications" ]; then
+    # Applications directory moved into read-only partition in macOS Catalina
+    source_dir="/System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts"
+  fi
+
+  cp "$source_dir"/SFMono-*.otf "$HOME/Library/Fonts/"
 }
 
 install_brew() {
