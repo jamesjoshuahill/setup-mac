@@ -37,8 +37,8 @@ brew 'gimme'
 brew 'nvm'
 
 # Databases
-brew 'mongodb/brew/mongodb-community', restart_service: :changed
-brew 'postgresql', restart_service: :changed
+brew 'mongodb/brew/mongodb-community@4.2', restart_service: :changed
+brew 'postgresql@12', restart_service: :changed
 
 # macOS tools
 cask 'flycut'
