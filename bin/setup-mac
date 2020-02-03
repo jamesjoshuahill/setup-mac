@@ -169,7 +169,7 @@ install_go() {
 }
 
 install_node() {
-  local version="10.16.3"
+  local version="12.14.1"
   log "Install Node.js ${version}"
 
   export NVM_DIR="$HOME/.nvm"
@@ -177,6 +177,7 @@ install_node() {
   source "/usr/local/opt/nvm/nvm.sh"
 
   nvm install $version
+  nvm alias default $version
   npm completion > /usr/local/etc/bash_completion.d/npm
 }
 
