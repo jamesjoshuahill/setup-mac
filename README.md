@@ -40,7 +40,7 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     - Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for the new Mac with the `repo` scope.
     - Run a git command on a private repo and enter GitHub credentials. They will be saved in the keychain.
 - System Preferences > Security > General
-    - Require password after '5 seconds'
+    - Require password after 'immediately'
 - System Preferences > Desktop & Screen Saver > Screen Saver
     - Start after '10 min'
     - Hot corners: 'Start Screen Saver' (top right)
