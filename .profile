@@ -45,5 +45,8 @@ export GIT_TOGETHER_NO_SIGNOFF=1  # Use 'Co-authored by: '
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] &&
   . "/usr/local/etc/profile.d/bash_completion.sh"
 
+# Editor
+export EDITOR=nano
+
 # Prompt
 export PS1='\[\033[34m\]\w\[\033[0m\] '
