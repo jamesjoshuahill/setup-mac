@@ -7,7 +7,7 @@ brew 'shellcheck'
 brew 'git'
 brew 'pivotal/tap/git-author'
 brew 'diff-so-fancy'
-brew 'hub'
+brew 'gh'
 
 # Command line tools
 brew 'direnv'
