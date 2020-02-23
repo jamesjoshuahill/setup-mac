@@ -3,7 +3,7 @@ intentions@1.1.5
 language-rspec@0.12.1
 linter@2.3.1
 linter-eslint@8.5.5
-linter-rubocop@2.5.4
+linter-rubocop@2.5.7
 linter-shellcheck@1.6.0
 linter-ui-default@1.8.1
 markdown-table-editor@1.1.2
