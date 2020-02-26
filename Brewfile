@@ -16,11 +16,12 @@ brew 'exercism'
 brew 'heroku/brew/heroku'
 brew 'httpie'
 brew 'jq'
+brew 'make'
+brew 'nvim'
 brew 'telnet'
 brew 'the_silver_searcher'
 brew 'travis'
 brew 'tree'
-brew 'make'
 brew 'watch'
 
 # Editors

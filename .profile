@@ -48,7 +48,7 @@ export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
   . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # Editor
-export EDITOR=nano
+export EDITOR=nvim
 
 # Prompt
 export PS1='\[\033[34m\]\w\[\033[0m\] '
