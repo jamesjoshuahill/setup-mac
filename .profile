@@ -42,6 +42,8 @@ eval "$(direnv hook bash)"
 export GIT_TOGETHER_NO_SIGNOFF=1  # Use 'Co-authored by: '
 
 # Enable bash completion
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
+
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] &&
   . "/usr/local/etc/profile.d/bash_completion.sh"
 
