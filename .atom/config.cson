@@ -17,6 +17,7 @@
     global:
       useGlobalEslint: true
   "linter-rubocop":
+    command: "bundle exec rubocop"
     disableWhenNoConfigFile: true
   "linter-shellcheck":
     enableNotice: true
