@@ -18,8 +18,12 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
         - Set Lock Message...
 
           `Found this computer? Please contact NAME on PHONE NUMBER or EMAIL ADDRESS.`
+    - System Preferences > Firewall
+        - Turn on Firewall
+    - System Preferences > Security & Privacy > Advertising
+        - Tick: Limit Ad Tracking
     - System Preferences > Security & Privacy > FileVault
-            - Turn on FileVault...
+        - Turn on FileVault...
 1. Upgrade macOS to the latest minor release (System Preferences > Software Update)
 1. Install command line tools
     ```bash
