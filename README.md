@@ -71,13 +71,13 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 - Safari preferences:
     - Autofill > Untick all.
     - Select Search > Search engine > DuckDuckGo
-    - Tick Advanced > Smart Search Field > Show full website address
-    - Tick Advanced > Show Develop menu in menu bar
-    - Tap View menu > Show Status Bar
+    - Tick: Advanced > Smart Search Field > Show full website address
+    - Tick: Advanced > Show Develop menu in menu bar
+    - Tap: View menu > Show Status Bar
 - User photo
     - Download your profile photo
     - Import profile photo into Photos app
-    - System Preferences > Users & Groups > USERNAME > edit (hover over photo)
+    - Tap: System Preferences > Users & Groups > USERNAME > edit (hover over photo)
 - Finder
     - Go > Computer
     - Navigate to Macintosh HD > Users
@@ -88,6 +88,8 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 - Import 'Convert to JPEG' workflow
     - Open Automator
     - Open `~/workflows/Convert to JPEG.workflow`
+- Sound preferences:
+    - Tick: System Preferences > Sound > Show volume in menu bar
 
 ## Daily
 
