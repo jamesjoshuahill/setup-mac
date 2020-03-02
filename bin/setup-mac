@@ -18,6 +18,7 @@ main() {
   remove_icons_from_dock
   set_shell
 
+  upgrade_ruby_build
   install_ruby
   update_ruby_gems
 
@@ -145,8 +146,12 @@ set_shell() {
   chsh -s /usr/local/bin/bash
 }
 
+upgrade_ruby_build() {
+  brew upgrade ruby-build
+}
+
 install_ruby() {
-  local version="2.6.5"
+  local version="2.7.0"
   log "Install Ruby ${version}"
   eval "$(rbenv init -)"
   rbenv install $version --skip-existing
