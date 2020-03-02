@@ -174,7 +174,7 @@ install_go() {
 }
 
 install_node() {
-  local version="12.14.1"
+  local version="12.16.1"
   log "Install Node.js ${version}"
 
   export NVM_DIR="$HOME/.nvm"
