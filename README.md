@@ -27,17 +27,21 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     ```
     > ⚠️ When Homebrew installs for the first time it may exit non-zero. Run
     > the setup script again to continue.
+
+    > ⚠️ Apps installed using Homebrew casks need to be manually approved the
+    > first time they are opened.
 1. Restart and re-run setup script to install all macOS updates
 
 ### Manual configuration
 
 - Load iTerm preferences:
-    - Tick: General > Preferences > Load preferences from a custom folder or URL and select the `~/.iterm` directory.
+    - Tick: General > Preferences > Load preferences from a custom folder or URL and type in the `~/.iterm` directory.
     - Tick: General > Preferences > Save changes to folder when iTerm2 quits
 - Rectangle preferences:
     - Tick: Settings > Launch on login
 - Flycut preferences:
     - Tick: General > Launch Flycut at login
+    - Select: Appearance > Menu item icon > Black scissors
 - Save GitHub credentials:
     - Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for the new Mac with the `repo` scope.
     - Run a git command on a private repo and enter GitHub credentials. They will be saved in the keychain.
@@ -47,7 +51,10 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     - Start after '10 min'
     - Hot corners: 'Start Screen Saver' (top right)
 - System Preferences > Security & Privacy > General
-    - Show a message when the screen is locked
+    - Tick: Show a message when the screen is locked
+    - Set Lock Message...
+
+      `Found this computer? Please contact NAME on PHONE NUMBER or EMAIL ADDRESS.`
 - System Preferences > Security & Privacy > FileVault
     - Turn on FileVault...
 
