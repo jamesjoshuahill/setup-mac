@@ -87,7 +87,7 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 - Sign into Slack
 - Import 'Convert to JPEG' workflow
     - Open Automator
-    - Open ``~/workflows/Convert to JPEG.workflow`
+    - Open `~/workflows/Convert to JPEG.workflow`
 
 ## Daily
 
