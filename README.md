@@ -25,6 +25,8 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
     ```bash
     ~/bin/setup-mac
     ```
+    > ⚠️ When Homebrew installs for the first time it may exit non-zero. Run
+    > the setup script again to continue.
 1. Restart and re-run setup script to install all macOS updates
 
 ### Manual configuration
