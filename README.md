@@ -68,7 +68,26 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 - Flycut preferences:
     - Tick: General > Launch Flycut at login
     - Select: Appearance > Menu item icon > Black scissors
-
+- Safari preferences:
+    - Autofill > Untick all.
+    - Select Search > Search engine > DuckDuckGo
+    - Tick Advanced > Smart Search Field > Show full website address
+    - Tick Advanced > Show Develop menu in menu bar
+    - Tap View menu > Show Status Bar
+- User photo
+    - Download your profile photo
+    - Import profile photo into Photos app
+    - System Preferences > Users & Groups > USERNAME > edit (hover over photo)
+- Finder
+    - Go > Computer
+    - Navigate to Macintosh HD > Users
+    - Drag user directory into sidebar
+- Add Google Account
+    - System Preferences > Internet Accounts > Google
+- Sign into Slack
+- Import 'Convert to JPEG' workflow
+    - Open Automator
+    - Open ``~/workflows/Convert to JPEG.workflow`
 
 ## Daily
 
