@@ -7,6 +7,7 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 
 ## Fresh install
 
+1. Upgrade macOS to the latest minor release (System Preferences > Software Update).
 1. Install command line tools
     ```bash
     xcode-select --install
