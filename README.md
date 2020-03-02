@@ -22,8 +22,6 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
         - Turn on Firewall
     - System Preferences > Security & Privacy > Advertising
         - Tick: Limit Ad Tracking
-    - System Preferences > Security & Privacy > FileVault
-        - Turn on FileVault...
 1. Upgrade macOS to the latest minor release (System Preferences > Software Update)
 1. Install command line tools
     ```bash
@@ -48,7 +46,17 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 
     > ⚠️ Apps installed using Homebrew casks need to be manually approved the
     > first time they are opened.
+
 1. Restart and re-run setup script to install all macOS updates
+1. Open 1Password and unlock vault
+1. Enable FileVault
+    - System Preferences > Security & Privacy > FileVault
+        - Turn on FileVault...
+        - Create a recovery key and do not use my iCloud account
+        - Store recovery key in 1Password
+1. Create GitHub token
+    - Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for your new Mac with the `repo` scope.
+    - Run a git command on a private repo and enter GitHub credentials. The token will be saved in the keychain.
 
 ### Manual configuration
 
@@ -60,9 +68,7 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 - Flycut preferences:
     - Tick: General > Launch Flycut at login
     - Select: Appearance > Menu item icon > Black scissors
-- Save GitHub credentials:
-    - Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for the new Mac with the `repo` scope.
-    - Run a git command on a private repo and enter GitHub credentials. They will be saved in the keychain.
+
 
 ## Daily
 
