@@ -161,10 +161,6 @@ install_ruby() {
 update_ruby_gems() {
   log "Update Ruby Gems"
   gem update --system
-
-  gem install bundler
-  gem install irb
-  gem install rspec
 }
 
 install_go() {
