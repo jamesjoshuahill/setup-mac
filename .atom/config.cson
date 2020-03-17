@@ -3,10 +3,6 @@
     enabled: true
   core:
     telemetryConsent: "no"
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
   editor:
     fontFamily: "SF Mono, Menlo, Consolas, DejaVu Sans Mono, monospace"
     fontSize: 18
