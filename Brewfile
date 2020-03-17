@@ -27,6 +27,7 @@ brew 'watch'
 # Editors
 cask 'atom'
 cask 'goland'
+cask 'visual-studio-code'
 
 # Ruby
 brew 'rbenv'
