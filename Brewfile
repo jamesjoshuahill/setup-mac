@@ -37,7 +37,6 @@ brew 'gimme'
 
 # Node.js
 brew 'nvm'
-brew 'yarn'
 
 # Databases
 brew 'mongodb/brew/mongodb-community@4.2', restart_service: :changed

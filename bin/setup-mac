@@ -25,6 +25,7 @@ main() {
   install_go
 
   install_node
+  install_yarn
 
   install_atom_packages
   upgrade_atom_packages
@@ -180,6 +181,10 @@ install_node() {
   nvm install $version
   nvm alias default $version
   npm completion > /usr/local/etc/bash_completion.d/npm
+}
+
+install_yarn() {
+  npm install yarn --global
 }
 
 install_atom_packages() {
