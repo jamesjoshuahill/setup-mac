@@ -31,6 +31,7 @@ assignees: ''
 ### Upgrade macOS
 
 - System Preferences > Software Update
+
   - [ ] Upgrade macOS to the latest minor release
 
 ### Run setup script
@@ -64,40 +65,52 @@ assignees: ''
 
 - 1Password
     - [ ] Open 1Password and unlock vault
+
 - FileVault
     - [ ] System Preferences > Security & Privacy > FileVault > Turn on FileVault...
     - [ ] Create a recovery key and do not use my iCloud account
     - [ ] Store recovery key in 1Password
+
 - GitHub
     - [ ] Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for your new Mac with the `repo` scope.
     - [ ] Run a git command on a private repo and enter GitHub credentials. The token will be saved in the keychain.
+
 - iTerm
     - [ ] Tick: General > Preferences > Load preferences from a custom folder or URL and type in the `~/.iterm` directory.
     - [ ] Tick: General > Preferences > Save changes to folder when iTerm2 quits
+
 - Rectangle
     - [ ] Tick: Settings > Launch on login
+
 - Flycut
     - [ ] Tick: General > Launch Flycut at login
     - [ ] Select: Appearance > Menu item icon > Black scissors
+
 - Safari
     - [ ] Autofill > Untick all.
     - [ ] Select Search > Search engine > DuckDuckGo
     - [ ] Tick: Advanced > Smart Search Field > Show full website address
     - [ ] Tick: Advanced > Show Develop menu in menu bar
     - [ ] Tap: View menu > Show Status Bar
+
 - macOS User
     - [ ] Download your profile photo
     - [ ] Import profile photo into Photos app
     - [ ] Tap: System Preferences > Users & Groups > USERNAME > edit (hover over photo)
+
 - Finder
     - [ ] Go > Computer
     - [ ] Navigate to Macintosh HD > Users
     - [ ] Drag user directory into sidebar
+
 - Google Account
     - [ ] System Preferences > Internet Accounts > Google
+
 - Slack
     - [ ] Sign in
+
 - Automator
     - [ ] Open `~/workflows/Convert to JPEG.workflow`
+
 - Sound
     - [ ] Tick: System Preferences > Sound > Show volume in menu bar
