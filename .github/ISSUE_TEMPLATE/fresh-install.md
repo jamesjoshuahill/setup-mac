@@ -36,29 +36,29 @@ assignees: ''
 ### Run setup script
 
 - Install command line tools
-    - [ ] `xcode-select --install`
+  - [ ] `xcode-select --install`
 
 - Set up the bare repository in `~/.setup`
-    - ```bash
-      git clone --bare https://github.com/jamesjoshuahill/setup-mac.git "$HOME/.setup/"
-      alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
-      setup-git config status.showUntrackedFiles no
-      ```
+  ```bash
+  git clone --bare https://github.com/jamesjoshuahill/setup-mac.git "$HOME/.setup/"
+  alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
+  setup-git config status.showUntrackedFiles no
+  ```
 
 - Update files in the home directory
-    - [ ] `setup-git checkout`
+  - [ ] `setup-git checkout`
 
 - Run the setup script
-    - `~/bin/setup-mac`
-      > ⚠️ When Homebrew installs for the first time it may exit non-zero. Run
-      > the setup script again to continue.
-      >
-      > ⚠️ Apps installed using Homebrew casks need to be manually approved the
-      > first time they are opened.
+  - [ ] `~/bin/setup-mac`
+    > ⚠️ When Homebrew installs for the first time it may exit non-zero. Run
+    > the setup script again to continue.
+    >
+    > ⚠️ Apps installed using Homebrew casks need to be manually approved the
+    > first time they are opened.
 
 - Restart and re-run to install all macOS updates
-    - [ ] Restart Mac
-    - [ ] Re-run setup script
+  - [ ] Restart Mac
+  - [ ] Re-run setup script
 
 ### One-off configuration
 
@@ -85,7 +85,7 @@ assignees: ''
     - [ ] Tick: Advanced > Smart Search Field > Show full website address
     - [ ] Tick: Advanced > Show Develop menu in menu bar
     - [ ] Tap: View menu > Show Status Bar
-- macOS User photo
+- macOS User
     - [ ] Download your profile photo
     - [ ] Import profile photo into Photos app
     - [ ] Tap: System Preferences > Users & Groups > USERNAME > edit (hover over photo)
