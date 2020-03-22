@@ -7,8 +7,9 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 
 ## Fresh install
 
-Create a new GitHub issue using the **Fresh install** template. This provides a
-checklist to set up a fresh Mac.
+Create a new GitHub issue using the **Fresh install** template.
+
+This provides a [checklist](.github/ISSUE_TEMPLATE/fresh-install.md) to set up a fresh Mac.
 
 ## Daily
 
