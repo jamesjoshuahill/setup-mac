@@ -36,26 +36,20 @@ assignees: ''
 ### Run setup script
 
 - Install command line tools
-    - [ ] ```bash
-      xcode-select --install
-      ```
+    - [ ] `xcode-select --install`
 
 - Set up the bare repository in `~/.setup`
-    - [ ] ```bash
+    - ```bash
       git clone --bare https://github.com/jamesjoshuahill/setup-mac.git "$HOME/.setup/"
       alias setup-git='git --git-dir="$HOME/.setup/" --work-tree="$HOME"'
       setup-git config status.showUntrackedFiles no
       ```
 
 - Update files in the home directory
-    - [ ] ```bash
-      setup-git checkout
-      ```
+    - [ ] `setup-git checkout`
 
 - Run the setup script
-    - [ ] ```bash
-      ~/bin/setup-mac
-      ```
+    - `~/bin/setup-mac`
       > ⚠️ When Homebrew installs for the first time it may exit non-zero. Run
       > the setup script again to continue.
       >
