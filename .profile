@@ -13,6 +13,9 @@ CDPATH=".:$HOME/projects"
 # Load aliases
 source "$HOME/.aliases"
 
+# Load commands
+source "$HOME/.commands"
+
 # Add ~/bin to path
 PATH="$HOME/bin:$PATH"
 
