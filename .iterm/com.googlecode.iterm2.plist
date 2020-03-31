@@ -76,7 +76,7 @@
 	<key>NSWindow Frame com.apple.typography_panel_SFMono-Regular</key>
 	<string>246 475 260 84 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2560 0 1440 877 2560 0 1440 877 </string>
+	<string>0 0 1440 877 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1388,7 +1388,7 @@
 					<key>algorithm</key>
 					<integer>0</integer>
 					<key>font</key>
-					<string>InconsolataForPowerline 20</string>
+					<string>Menlo-Regular 11</string>
 				</dict>
 				<key>components</key>
 				<array>
@@ -1414,13 +1414,13 @@
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.25</real>
+									<real>0.62999999523162842</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.25</real>
+									<real>0.62999999523162842</real>
 									<key>Red Component</key>
-									<real>0.5</real>
+									<real>0.89999997615814209</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1428,7 +1428,7 @@
 								<key>algorithm</key>
 								<integer>0</integer>
 								<key>font</key>
-								<string>InconsolataForPowerline 20</string>
+								<string>Menlo-Regular 11</string>
 							</dict>
 						</dict>
 					</dict>
@@ -1473,14 +1473,14 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{2560, 0}, {1440, 900}}</string>
+		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{2781, 741}</string>
+		<string>{280, 742}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>957B1B96-7D7C-4878-A1B6-1319B53711EB</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>46</integer>
+	<integer>56</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2237,7 +2237,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-17T10:53:49Z</date>
+	<date>2020-03-23T17:40:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
