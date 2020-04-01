@@ -30,6 +30,8 @@ main() {
   install_atom_packages
   upgrade_atom_packages
 
+  install_vscode_extensions
+
   create_projects_directory
 
   finish
@@ -195,6 +197,11 @@ install_atom_packages() {
 upgrade_atom_packages() {
   log "Upgrade Atom packages"
   apm upgrade --production --packages-file "$HOME/.atom/packages.txt" --confirm false
+}
+
+install_vscode_extensions() {
+  log "Install VS Code extensions"
+  xargs -n 1 code --force --install-extension < "$HOME/.vscode/extensions.txt"
 }
 
 create_projects_directory() {
