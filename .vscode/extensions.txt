@@ -1,0 +1,9 @@
+bierner.markdown-preview-github-styles
+dbaeumer.vscode-eslint
+karunamurti.rspec-snippets
+misogi.ruby-rubocop
+ms-vscode.atom-keybindings
+ms-vscode.Go
+timonwong.shellcheck
+wingrunr21.vscode-ruby
+yzhang.markdown-all-in-one
