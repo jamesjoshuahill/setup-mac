@@ -4,6 +4,8 @@ karunamurti.rspec-snippets
 misogi.ruby-rubocop
 ms-vscode.atom-keybindings
 ms-vscode.Go
+noku.rails-run-spec-vscode
+rebornix.ruby
 timonwong.shellcheck
 wingrunr21.vscode-ruby
 yzhang.markdown-all-in-one
