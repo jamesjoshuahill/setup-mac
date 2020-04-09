@@ -21,5 +21,6 @@
         }
     },
     "ruby.format": "rubocop",
-    "ruby.specClearTerminal": false
+    "ruby.specClearTerminal": false,
+    "workbench.startupEditor": "newUntitledFile"
 }
