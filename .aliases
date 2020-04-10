@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 alias reload='source "$HOME/.profile"'
-alias ll='ls -alGh'
+alias ll='exa --long --all'
 alias da='direnv allow'
 
 # Setup
