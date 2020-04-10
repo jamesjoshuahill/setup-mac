@@ -44,6 +44,9 @@ eval "$(direnv hook bash)"
 # git-author
 export GIT_TOGETHER_NO_SIGNOFF=1  # Use 'Co-authored by: '
 
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # Enable bash completion
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 
