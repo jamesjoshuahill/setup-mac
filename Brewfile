@@ -10,6 +10,7 @@ brew 'diff-so-fancy'
 brew 'gh'
 
 # Command line tools
+brew 'bat'
 brew 'direnv'
 brew 'dockutil'
 brew 'exercism'
