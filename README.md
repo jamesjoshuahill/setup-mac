@@ -5,6 +5,14 @@ Mac and keep it up to date.
 
 Files in the home directory are tracked using a bare git repository in `~/.setup`.
 
+## Prerequisites
+
+- A Mac computer
+- macOS Catalina
+
+The setup script has limited requirements: Git, Bash and Ruby.
+All are available on macOS by default.
+
 ## Fresh install
 
 Create a new GitHub issue using the **Fresh install** template.
