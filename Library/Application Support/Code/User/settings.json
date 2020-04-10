@@ -22,5 +22,6 @@
     },
     "ruby.format": "rubocop",
     "ruby.specClearTerminal": false,
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "go.useLanguageServer": true
 }
