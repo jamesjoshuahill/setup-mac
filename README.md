@@ -61,8 +61,8 @@ Update [Sensible Bash](https://github.com/mrzool/bash-sensible) in `~/.sensible`
 
 ## Acknowledgements
 
-- [Gerhard Lazu's setup](https://github.com/gerhard/setup)
-- [Pivotal's workstation-setup](https://github.com/pivotal/workstation-setup)
-- [The best way to store your dotfiles: A bare Git repository](https://www.atlassian.com/git/tutorials/dotfiles).
-- [Sensible Bash](https://github.com/mrzool/bash-sensible)
-- [A Few of My Favorite Things by Kyle Adams](https://blog.testdouble.com/posts/2020-04-07-favorite-things/)
+- [setup](https://github.com/gerhard/setup) by Gerhard Lazu
+- [workstation-setup](https://github.com/pivotal/workstation-setup) by Pivotal
+- [The best way to store your dotfiles: A bare Git repository](https://www.atlassian.com/git/tutorials/dotfiles) by Nicola Paolucci
+- [Sensible Bash](https://github.com/mrzool/bash-sensible) by Mattia Tezzele
+- [A Few of My Favorite Things](https://blog.testdouble.com/posts/2020-04-07-favorite-things/) by Kyle Adams
