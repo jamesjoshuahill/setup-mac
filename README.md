@@ -65,3 +65,4 @@ Update [Sensible Bash](https://github.com/mrzool/bash-sensible) in `~/.sensible`
 - [Pivotal's workstation-setup](https://github.com/pivotal/workstation-setup)
 - [The best way to store your dotfiles: A bare Git repository](https://www.atlassian.com/git/tutorials/dotfiles).
 - [Sensible Bash](https://github.com/mrzool/bash-sensible)
+- [A Few of My Favorite Things by Kyle Adams](https://blog.testdouble.com/posts/2020-04-07-favorite-things/)
