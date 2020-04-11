@@ -154,6 +154,7 @@ set_shell() {
 }
 
 upgrade_ruby_build() {
+  log "Upgrade ruby-build"
   brew upgrade ruby-build
 }
 
@@ -187,6 +188,7 @@ install_node() {
 }
 
 install_yarn() {
+  log "Install yarn"
   npm install yarn --global
 }
 
@@ -206,6 +208,7 @@ install_vscode_extensions() {
 }
 
 create_projects_directory() {
+  log "Create ~/projects"
   mkdir -p "$HOME/projects"
 }
 
