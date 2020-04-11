@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC1090,1091
 
-# Sensible bash
+# Sensible Bash
 [ -f "$HOME/sensible.bash" ] && source "$HOME/sensible.bash"
 
-# Allow overwriting files on stdout redirection '>'
-set +o noclobber
-
-# Add ~/projects to CDPATH
-CDPATH=".:$HOME/projects"
+# Configure Sensible Bash
+set +o noclobber  # Allow overwriting files on stdout redirection '>'
+CDPATH=".:$HOME/projects"  # Add ~/projects to CDPATH
 
 # Load aliases
 source "$HOME/.aliases"
