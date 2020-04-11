@@ -2,7 +2,7 @@
 # shellcheck disable=SC1090,1091
 
 # Sensible bash
-source "$HOME/.sensible"
+[ -f "$HOME/sensible.bash" ] && source "$HOME/sensible.bash"
 
 # Allow overwriting files on stdout redirection '>'
 set +o noclobber

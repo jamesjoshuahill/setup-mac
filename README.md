@@ -65,7 +65,7 @@ Update the pinned versions in `~/Brewfile`:
 - MongoDB
 - Postgres
 
-Update Sensible Bash in `~/.sensible`:
+Update Sensible Bash in `~/sensible.bash`:
 - [Sensible Bash](https://github.com/mrzool/bash-sensible)
 
 ## Acknowledgements
