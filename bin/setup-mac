@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-default_ruby_version="2.7.0"
+default_ruby_version="2.7.1"
 default_go_version="1.14"
 default_node_version="12.16.1"
 
