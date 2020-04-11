@@ -2,6 +2,10 @@
 
 set -euo pipefail
 
+default_ruby_version="2.7.0"
+default_go_version="1.14"
+default_node_version="12.16.1"
+
 main() {
   start
 
@@ -154,11 +158,10 @@ upgrade_ruby_build() {
 }
 
 install_ruby() {
-  local version="2.7.0"
-  log "Install Ruby ${version}"
+  log "Install Ruby ${default_ruby_version}"
   eval "$(rbenv init -)"
-  rbenv install $version --skip-existing
-  rbenv global $version
+  rbenv install $default_ruby_version --skip-existing
+  rbenv global $default_ruby_version
 }
 
 update_ruby_gems() {
@@ -167,21 +170,19 @@ update_ruby_gems() {
 }
 
 install_go() {
-  local version="1.14"
-  log "Install Go ${version}"
-  gimme $version
+  log "Install Go ${default_go_version}"
+  gimme $default_go_version
 }
 
 install_node() {
-  local version="12.16.1"
-  log "Install Node.js ${version}"
+  log "Install Node.js ${default_node_version}"
 
   export NVM_DIR="$HOME/.nvm"
   # shellcheck disable=SC1091
   source "/usr/local/opt/nvm/nvm.sh"
 
-  nvm install $version
-  nvm alias default $version
+  nvm install $default_node_version
+  nvm alias default $default_node_version
   npm completion > /usr/local/etc/bash_completion.d/npm
 }
 
