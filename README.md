@@ -59,13 +59,14 @@ update-atom-package-list    # updates ~/.atom/packages.txt
 Update the pinned versions in `~/bin/setup-mac`:
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Node.js](https://nodejs.org/en/)
-- [Go](https://golang.org)
+- [Go](https://golang.org/dl/)
 
 Update the pinned versions in `~/Brewfile`:
 - MongoDB
 - Postgres
 
-Update [Sensible Bash](https://github.com/mrzool/bash-sensible) in `~/.sensible`.
+Update Sensible Bash in `~/.sensible`:
+- [Sensible Bash](https://github.com/mrzool/bash-sensible)
 
 ## Acknowledgements
 
