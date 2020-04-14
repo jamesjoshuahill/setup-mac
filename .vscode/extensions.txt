@@ -1,4 +1,5 @@
 bierner.markdown-preview-github-styles
+DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 karunamurti.rspec-snippets
