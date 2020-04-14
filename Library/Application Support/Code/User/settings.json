@@ -23,5 +23,9 @@
     "ruby.format": "rubocop",
     "ruby.specClearTerminal": false,
     "workbench.startupEditor": "newUntitledFile",
-    "go.useLanguageServer": true
+    "go.useLanguageServer": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true
 }

@@ -1,5 +1,6 @@
 bierner.markdown-preview-github-styles
 dbaeumer.vscode-eslint
+esbenp.prettier-vscode
 karunamurti.rspec-snippets
 misogi.ruby-rubocop
 ms-vscode.atom-keybindings
