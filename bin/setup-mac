@@ -113,7 +113,7 @@ update_brew() {
 
 update_brew_bundle() {
   log "Update Homebrew Bundle"
-  brew bundle --verbose
+  brew bundle --global --verbose
 }
 
 start_brew_services() {
