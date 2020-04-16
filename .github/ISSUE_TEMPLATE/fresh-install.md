@@ -78,6 +78,7 @@ assignees: ''
 - iTerm
     - [ ] Tick: General > Preferences > Load preferences from a custom folder or URL and type in the `~/.iterm` directory.
     - [ ] Tick: General > Preferences > Save changes to folder when iTerm2 quits
+    - [ ] Restart iTerm
 
 - Rectangle
     - [ ] Tick: Settings > Launch on login
@@ -101,7 +102,7 @@ assignees: ''
 - Finder
     - [ ] Go > Computer
     - [ ] Navigate to Macintosh HD > Users
-    - [ ] Drag user directory into sidebar
+    - [ ] Drag user directory into Favourites in sidebar
 
 - Google Account
     - [ ] System Preferences > Internet Accounts > Google
