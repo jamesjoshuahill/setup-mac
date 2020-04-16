@@ -18,7 +18,7 @@ assignees: ''
 
     `Found this computer? Please contact NAME on PHONE NUMBER or EMAIL ADDRESS.`
 
-- System Preferences > Security & Privacy > Advertising
+- System Preferences > Security & Privacy > Privacy > Advertising
   - [ ] Tick: Limit Ad Tracking
 
 - System Preferences > Firewall
@@ -57,7 +57,7 @@ assignees: ''
     > ⚠️ Apps installed using Homebrew casks need to be manually approved the
     > first time they are opened.
 
-- Restart and re-run to install all macOS updates
+- Restart and re-run the setup script to install all macOS updates
   - [ ] Restart Mac
   - [ ] Re-run setup script
 
