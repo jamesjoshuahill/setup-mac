@@ -32,14 +32,10 @@ cask 'goland'
 brew 'nvim'
 cask 'visual-studio-code'
 
-# Ruby
-brew 'rbenv'
-
-# Go
-brew 'gimme'
-
-# Node.js
-brew 'nvm'
+# Language version managers
+brew 'gimme'    # Go
+brew 'nvm'      # Node.js
+brew 'rbenv'    # Ruby
 
 # macOS tools
 cask 'flycut'
