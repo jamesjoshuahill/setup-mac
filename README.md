@@ -66,10 +66,6 @@ Update the pinned versions in `~/bin/setup-mac`:
 - [Node.js](https://nodejs.org/en/)
 - [Go](https://golang.org/dl/)
 
-Update the pinned versions in `~/Brewfile`:
-- [MongoDB](https://www.mongodb.com/download-center/community)
-- [Postgres](https://www.postgresql.org/download/macosx/)
-
 Update Sensible Bash in `~/sensible.bash`:
 - [Sensible Bash](https://github.com/mrzool/bash-sensible)
 
