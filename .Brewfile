@@ -41,10 +41,6 @@ brew 'gimme'
 # Node.js
 brew 'nvm'
 
-# Databases
-brew 'mongodb/brew/mongodb-community@4.2', restart_service: :changed
-brew 'postgresql@12', restart_service: :changed
-
 # macOS tools
 cask 'flycut'
 cask 'rectangle'

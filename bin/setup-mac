@@ -16,7 +16,6 @@ main() {
   install_brew
   update_brew
   update_brew_bundle
-  start_brew_services
   cleanup_brew
 
   remove_icons_from_dock
@@ -116,16 +115,9 @@ update_brew_bundle() {
   brew bundle --global --verbose
 }
 
-start_brew_services() {
-  log "Start Homebrew Services"
-  brew services start postgresql
-  brew services start mongodb-community
-}
-
 cleanup_brew() {
   log "Cleanup Homebrew"
   brew cleanup
-  brew services cleanup
 }
 
 remove_icons_from_dock() {
