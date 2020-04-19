@@ -54,6 +54,11 @@ Update the Atom package list:
 update-atom-package-list    # updates ~/.atom/packages.txt
 ```
 
+Update the VS Code extension list:
+```bash
+update-vscode-extension-list    # updates ~/.vscode/extensions.txt
+```
+
 ## Monthly
 
 Update the pinned versions in `~/bin/setup-mac`:
