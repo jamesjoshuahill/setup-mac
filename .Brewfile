@@ -20,7 +20,6 @@ brew 'heroku/brew/heroku'
 brew 'httpie'
 brew 'jq'
 brew 'make'
-brew 'nvim'
 brew 'ripgrep'
 brew 'telnet'
 brew 'tldr'
@@ -31,6 +30,7 @@ brew 'watch'
 # Editors
 cask 'atom'
 cask 'goland'
+brew 'nvim'
 cask 'visual-studio-code'
 
 # Ruby
