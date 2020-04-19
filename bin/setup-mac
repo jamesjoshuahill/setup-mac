@@ -47,7 +47,7 @@ log()  {
 }
 
 start() {
-  log "Start update"
+  log "Start setup"
 }
 
 update_macos() {
@@ -213,7 +213,7 @@ create_projects_directory() {
 }
 
 finish() {
-  log "Finished update"
+  log "Finished setup"
   echo
 }
 
