@@ -1,19 +1,15 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC1090,1091
 
-# Sensible Bash
-[ -f "$HOME/.profile.d/sensible.bash" ] && source "$HOME/.profile.d/sensible.bash"
+# Load application-specific settings
+for setting in "$HOME/.profile.d"/*; do
+  source "$setting"
+done
 
 # Configure Sensible Bash
 set +o noclobber  # Allow overwriting files on stdout redirection '>'
 CDPATH=".:$HOME/projects"  # Add ~/projects to CDPATH
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear:exa"  # Add exa to HISTIGNORE
-
-# Load aliases
-source "$HOME/.profile.d/aliases.bash"
-
-# Load clone function
-source "$HOME/.profile.d/clone.bash"
 
 # Add ~/bin to path
 PATH="$HOME/bin:$PATH"
@@ -42,9 +38,6 @@ eval "$(direnv hook bash)"
 
 # git-author
 export GIT_TOGETHER_NO_SIGNOFF=1  # Use 'Co-authored by: '
-
-# fzf
-[ -f "$HOME/.profile.d/fzf.bash" ] && source "$HOME/.profile.d/fzf.bash"
 
 # Enable bash completion
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
