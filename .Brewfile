@@ -39,6 +39,7 @@ brew 'nvm'      # Node.js
 brew 'rbenv'    # Ruby
 
 # Menu bar apps
+cask 'docker'
 cask 'dropbox'
 cask 'flycut'
 cask 'ivpn'
