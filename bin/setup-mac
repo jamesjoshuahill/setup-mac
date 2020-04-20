@@ -36,6 +36,7 @@ main() {
   install_vscode_extensions
 
   create_projects_directory
+  touch_git_author_template
 
   finish
 }
@@ -202,6 +203,11 @@ install_vscode_extensions() {
 create_projects_directory() {
   log "Create ~/projects"
   mkdir -p "$HOME/projects"
+}
+
+touch_git_author_template() {
+  log "Touch git-author template"
+  touch "$HOME/.git-author-template"
 }
 
 finish() {
