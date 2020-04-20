@@ -24,7 +24,6 @@ brew 'make'
 brew 'ripgrep'
 brew 'tldr'
 brew 'travis'
-brew 'tree'
 brew 'watch'
 
 # Editors
