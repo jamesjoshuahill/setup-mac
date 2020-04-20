@@ -37,17 +37,17 @@ brew 'gimme'    # Go
 brew 'nvm'      # Node.js
 brew 'rbenv'    # Ruby
 
-# macOS tools
+# Menu bar apps
+cask 'dropbox'
 cask 'flycut'
+cask 'ivpn'
+cask 'krisp'
 cask 'rectangle'
 
 # Apps
 cask '1password'
 cask 'brave-browser'
-cask 'dropbox'
 cask 'iterm2'
-cask 'ivpn'
-cask 'krisp'
 cask 'slack'
 cask 'tableplus'
 cask 'zoomus'
