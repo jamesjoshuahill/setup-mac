@@ -22,26 +22,31 @@ This provides a [checklist](.github/ISSUE_TEMPLATE/fresh-install.md) to set up a
 ## Daily
 
 Run the setup script regularly to update to the latest versions:
+
 ```bash
 setup-mac
 ```
 
 Check for changes to config:
+
 ```bash
 setup-git status
 ```
 
 Check in changes to tracked configuration:
+
 ```bash
 setup-git add -p            # stage changes
 ```
 
 Track new configuration:
+
 ```bash
 setup-git add NEW_FILE      # track a new file
 ```
 
 Commit and push:
+
 ```bash
 setup-git commit -m "..."
 setup-git push
@@ -50,11 +55,13 @@ setup-git push
 > ℹ️ You can use the Bash alias `s` for `setup-git` and the Git aliases for shorter commands: `s st`, `s add -p`.
 
 Update the Atom package list:
+
 ```bash
 update-atom-package-list    # updates ~/.atom/packages.txt
 ```
 
 Update the VS Code extension list:
+
 ```bash
 update-vscode-extension-list    # updates ~/.vscode/extensions.txt
 ```
@@ -62,11 +69,13 @@ update-vscode-extension-list    # updates ~/.vscode/extensions.txt
 ## Monthly
 
 Update the pinned versions in `~/bin/setup-mac`:
+
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Node.js](https://nodejs.org/en/)
 - [Go](https://golang.org/dl/)
 
-Update Sensible Bash in `~/sensible.bash`:
+Update Sensible Bash in `~/bin/sensible.bash`:
+
 - [Sensible Bash](https://github.com/mrzool/bash-sensible)
 
 ## Acknowledgements
