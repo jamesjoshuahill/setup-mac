@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for setting in "$HOME/.profile.d"/*; do
+for initializer in "$HOME/.profile.d"/*.bash; do
   # shellcheck disable=SC1090
-  source "$setting"
+  source "$initializer"
 done
