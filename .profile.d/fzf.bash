@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC1091
+
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
