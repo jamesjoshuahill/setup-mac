@@ -5,7 +5,6 @@ brew 'shellcheck'
 
 # git
 brew 'git'
-brew 'pivotal/tap/git-author'
 brew 'diff-so-fancy'
 brew 'gh'
 

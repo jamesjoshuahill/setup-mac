@@ -30,7 +30,6 @@
 	whitespace = red reverse
 [commit]
 	verbose = true
-	template = ~/.git-author-template
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
@@ -38,5 +37,3 @@
 [user]
 	name = Josh Hill
 	email = jamesjoshuahill@users.noreply.github.com
-[git-together "authors"]
-	jh = "Josh Hill; jamesjoshuahill@users.noreply.github.com"
