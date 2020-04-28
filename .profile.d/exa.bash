@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-alias ll='exa --long --all --git'
+alias ll='exa --long --all --group --git'
 alias tree='exa --tree'
 
 # Add exa to HISTIGNORE (based on sensible.bash)
