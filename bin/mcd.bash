@@ -5,7 +5,10 @@ mcd() {
 
   if [ -z "$dir" ]
   then
-    >&2 echo "usage: mcd DIRECTORY"
+    >&2 echo "Create and change into a new directory.
+
+Usage:
+  mcd DIRECTORY"
     return
   fi
 

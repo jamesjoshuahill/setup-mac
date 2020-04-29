@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-# Git clone shortcut
 function clone() {
   repo=$1
 
   if [ -z "$repo" ]
   then
-    >&2 echo "usage: clone GIT_URL"
+    >&2 echo "Clone a git repo into ~/projects and change into it.
+
+Usage:
+  clone GIT_URL"
     return
   fi
 
