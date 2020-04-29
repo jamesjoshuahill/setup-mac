@@ -5,8 +5,8 @@
 	cp = cherry-pick
 	di = diff
 	ds = diff --staged
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	lga = !git lg --all
+	lg = log --pretty=coloured
+	lga = log --pretty=coloured --all --graph
 	pf = push --force-with-lease
 	pl = pull --rebase
 	re = remote -v
@@ -34,6 +34,8 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [credential]
 	helper = osxkeychain
+[pretty]
+	coloured = format:%C(auto)%h %d %s %Cgreen(%cr) %C(bold blue)%an
 [user]
 	name = Josh Hill
 	email = jamesjoshuahill@users.noreply.github.com
