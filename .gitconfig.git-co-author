@@ -1,0 +1,4 @@
+[commit]
+	template = ~/.git-template
+[co-authors]
+	jh = Josh Hill <jamesjoshuahill@users.noreply.github.com>

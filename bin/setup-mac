@@ -35,6 +35,7 @@ main() {
 
   install_vscode_extensions
 
+  install_git-co-author
   create_projects_directory
 
   finish
@@ -197,6 +198,15 @@ upgrade_atom_packages() {
 install_vscode_extensions() {
   log "Install VS Code extensions"
   xargs -n 1 code --force --install-extension < "$HOME/.vscode/extensions.txt"
+}
+
+install_git-co-author() {
+  log "Install git-co-author"
+  local temp_file
+  temp_file=$(mktemp)
+  curl https://raw.githubusercontent.com/jamesjoshuahill/git-co-author/master/git-co-author -o "$temp_file"
+  install -C "$temp_file" /usr/local/bin/git-co-author
+  touch "$HOME/.git-template"
 }
 
 create_projects_directory() {
