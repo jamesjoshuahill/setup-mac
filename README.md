@@ -85,3 +85,4 @@ Update Sensible Bash in `~/bin/sensible.bash`:
 - [The best way to store your dotfiles: A bare Git repository](https://www.atlassian.com/git/tutorials/dotfiles) by Nicola Paolucci
 - [Sensible Bash](https://github.com/mrzool/bash-sensible) by Mattia Tezzele
 - [A Few of My Favorite Things](https://blog.testdouble.com/posts/2020-04-07-favorite-things/) by Kyle Adams
+- [dotfiles](https://github.com/thoughtbot/dotfiles) by thoughtbot
