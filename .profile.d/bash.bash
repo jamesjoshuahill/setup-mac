@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC1090
 
 # Load Sensible Bash
-# shellcheck disable=SC1090
 source "$HOME/bin/sensible.bash"
-
 set +o noclobber  # Allow overwriting files on stdout redirection '>'
 
+# Convenience functions
 alias reload='source "$HOME/.profile"'
+source "$HOME/bin/mcd.bash"
 
 export PATH="$HOME/bin:$PATH"
 export CDPATH=".:$HOME/projects"
