@@ -35,7 +35,7 @@
 [credential]
 	helper = osxkeychain
 [pretty]
-	coloured = format:%C(auto)%h %d %s %Cgreen(%cr) %C(bold blue)%an
+	coloured = format:%C(auto)%h %d %s %C(green)(%cr) %C(cyan)%an
 [user]
 	name = Josh Hill
 	email = jamesjoshuahill@users.noreply.github.com
