@@ -5,8 +5,8 @@
 	cp = cherry-pick
 	di = diff
 	ds = diff --staged
-	lg = log --pretty=oneline
-	lga = log --pretty=oneline --all --graph
+	lg = log --pretty=coloured
+	lga = log --pretty=coloured --all --graph
 	pf = push --force-with-lease
 	pl = pull --rebase
 	re = remote -v
@@ -22,7 +22,7 @@
 	path = ~/.gitconfig.diff-so-fancy
 	path = ~/.gitconfig.git-co-author
 [pretty]
-	oneline = format:%C(auto)%h%d %s %C(green)(%cr) %C(cyan)%an
+	coloured = format:%C(auto)%h%d %s %C(green)(%cr) %C(cyan)%an
 [user]
 	name = Josh Hill
 	email = jamesjoshuahill@users.noreply.github.com
