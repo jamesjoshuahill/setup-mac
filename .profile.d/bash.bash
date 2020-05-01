@@ -12,4 +12,4 @@ source "$HOME/bin/mcd.bash"
 export PATH="$HOME/bin:$PATH"
 export CDPATH=".:$HOME/projects"
 export EDITOR=nvim
-export PS1='\[\033[34m\]\w\[\033[0m\] '
+export PS1='\[\033[01;34m\]\w\[\033[0m\] '
