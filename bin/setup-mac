@@ -88,7 +88,8 @@ install_sf_mono_font() {
   log "Install SF Mono font"
   local source_dir="/Applications/Utilities/Terminal.app/Contents/Resources/Fonts"
 
-  if [ -d "/System/Applications" ]; then
+  if [ -d "/System/Applications" ]
+  then
     # Applications directory moved into read-only partition in macOS Catalina
     source_dir="/System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts"
   fi
@@ -98,7 +99,8 @@ install_sf_mono_font() {
 
 install_brew() {
   log "Install Homebrew"
-  if hash brew 2>/dev/null; then
+  if hash brew &> /dev/null
+  then
     echo "Homebrew already installed."
     return
   fi
@@ -132,14 +134,16 @@ remove_icons_from_dock() {
 set_shell() {
   log "Set shell"
   local homebrew_bash="/usr/local/bin/bash"
-  if ! grep $homebrew_bash /etc/shells > /dev/null 2>&1; then
+  if ! grep $homebrew_bash /etc/shells &> /dev/null
+  then
     echo $homebrew_bash | sudo tee -a /etc/shells > /dev/null
     echo "Added Homebrew bash to system shells."
   fi
 
   local user_shell
   user_shell=$(dscl /Local/Default -read "/Users/$USER" UserShell | cut -d' ' -f2)
-  if [ "$user_shell" = $homebrew_bash ]; then
+  if [ "$user_shell" = $homebrew_bash ]
+  then
     return
   fi
 
