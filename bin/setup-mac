@@ -188,7 +188,7 @@ install_yarn() {
 
 install_vscode_extensions() {
   log "Install VS Code extensions"
-  xargs -n 1 code --force --install-extension < "$HOME/.vscode/extensions.txt"
+  xargs -n 1 code --force --install-extension < "$HOME/.config/vscode/extensions.txt"
 }
 
 install_git-co-author() {
