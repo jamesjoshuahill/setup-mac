@@ -27,7 +27,6 @@ brew 'travis'
 brew 'watch'
 
 # Editors
-cask 'atom'
 cask 'goland'
 brew 'nvim'
 cask 'visual-studio-code'

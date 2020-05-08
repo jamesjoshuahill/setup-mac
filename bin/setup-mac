@@ -30,9 +30,6 @@ main() {
   install_node
   install_yarn
 
-  install_atom_packages
-  upgrade_atom_packages
-
   install_vscode_extensions
 
   install_git-co-author
@@ -187,16 +184,6 @@ install_node() {
 install_yarn() {
   log "Install yarn"
   npm install yarn --global
-}
-
-install_atom_packages() {
-  log "Install Atom packages"
-  apm install --production --packages-file "$HOME/.atom/packages.txt"
-}
-
-upgrade_atom_packages() {
-  log "Upgrade Atom packages"
-  apm upgrade --production --packages-file "$HOME/.atom/packages.txt" --confirm false
 }
 
 install_vscode_extensions() {
