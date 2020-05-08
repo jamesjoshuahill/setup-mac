@@ -42,7 +42,7 @@ setup-git add -p            # stage changes
 Track new configuration:
 
 ```bash
-setup-git add NEW_FILE      # track a new file
+setup-git add -f NEW_FILE   # track a new file
 ```
 
 Commit and push:
