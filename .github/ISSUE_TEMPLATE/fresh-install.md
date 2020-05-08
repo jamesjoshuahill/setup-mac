@@ -50,7 +50,7 @@ assignees: ''
   - [ ] `setup-git checkout`
 
 - Run the setup script
-  - [ ] `~/bin/setup-mac`
+  - [ ] `~/setup-mac`
     > ⚠️ When Homebrew installs for the first time it may exit non-zero. Run
     > the setup script again to continue.
     >
