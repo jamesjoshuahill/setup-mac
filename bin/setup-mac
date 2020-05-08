@@ -112,7 +112,7 @@ update_brew() {
 
 update_brew_bundle() {
   log "Update Homebrew Bundle"
-  brew bundle --verbose --file "$HOME/.config/homebrew-bundle/Brewfile"
+  brew bundle --global --verbose
 }
 
 cleanup_brew() {
