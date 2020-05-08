@@ -19,8 +19,8 @@
 [credential]
 	helper = osxkeychain
 [include]
-	path = ~/.gitconfig.diff-so-fancy
-	path = ~/.gitconfig.git-co-author
+	path = ~/.config/git/diff-so-fancy
+	path = ~/.config/git/git-co-author
 [pretty]
 	coloured = format:%C(auto)%h%d %s %C(green)(%cr) %C(cyan)%an
 [user]

@@ -210,7 +210,7 @@ install_git-co-author() {
   temp_file=$(mktemp)
   curl https://raw.githubusercontent.com/jamesjoshuahill/git-co-author/master/git-co-author -o "$temp_file"
   install -C "$temp_file" /usr/local/bin/git-co-author
-  touch "$HOME/.git-template"
+  touch "$HOME/.config/git/commit-template"
 }
 
 create_projects_directory() {
