@@ -24,7 +24,7 @@ This provides a [checklist](.github/ISSUE_TEMPLATE/fresh-install.md) to set up a
 Run the setup script regularly to update to the latest versions:
 
 ```bash
-setup-mac
+~/setup-mac
 ```
 
 Check for changes to config:
@@ -57,18 +57,18 @@ setup-git push
 Update the VS Code extension list:
 
 ```bash
-update-vscode-extension-list    # updates ~/.vscode/extensions.txt
+~/update-vscode-extension-list
 ```
 
 ## Monthly
 
-Update the pinned versions in `~/bin/setup-mac`:
+Update the pinned versions in `~/setup-mac`:
 
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Node.js](https://nodejs.org/en/)
 - [Go](https://golang.org/dl/)
 
-Update Sensible Bash in `~/bin/sensible.bash`:
+Update Sensible Bash in `~/.config/profile.d/sensible.bash`:
 
 - [Sensible Bash](https://github.com/mrzool/bash-sensible)
 
