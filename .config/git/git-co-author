@@ -1,4 +1,0 @@
-[commit]
-	template = ~/.config/git/commit-template
-[co-authors]
-	jh = Josh Hill <jamesjoshuahill@users.noreply.github.com>
