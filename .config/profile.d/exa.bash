@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+alias ls='exa'
 alias ll='exa --long --all --group --git'
 alias tree='exa --tree'
 
