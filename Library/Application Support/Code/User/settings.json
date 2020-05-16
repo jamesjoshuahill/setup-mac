@@ -54,4 +54,7 @@
     },
     "go.autocompleteUnimportedPackages": true,
     "go.coverageOptions": "showUncoveredCodeOnly"
+    "files.associations": {
++     ".Brewfile": "ruby"
+    }
 }
