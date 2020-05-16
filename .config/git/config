@@ -18,31 +18,17 @@
 	verbose = true
 [credential]
 	helper = osxkeychain
-[diff]
-	colorMoved = zebra
 [pretty]
 	coloured = format:%C(auto)%h%d %s %C(green)(%cr) %C(cyan)%an
 [user]
 	name = Josh Hill
 	email = jamesjoshuahill@users.noreply.github.com
 
-# diff-so-fancy
-[color]
-	ui = true
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
-[color "diff"]
-	meta = 11
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
+# git-delta
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta --keep-plus-minus-markers
+[interactive]
+	diffFilter = delta --color-only
 
 # git-co-author
 [commit]

@@ -5,7 +5,7 @@ brew 'shellcheck'
 
 # git
 brew 'git'
-brew 'diff-so-fancy'
+brew 'git-delta'
 brew 'gh'
 
 # Command line tools
