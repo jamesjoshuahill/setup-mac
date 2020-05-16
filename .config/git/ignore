@@ -3,3 +3,6 @@
 
 # Apple "Desktop services store"
 .DS_Store
+
+# JetBrains editors
+.idea
