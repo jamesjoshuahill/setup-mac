@@ -1,60 +1,56 @@
 {
-    "files.autoSave": "onFocusChange",
-    "editor.fontSize": 18,
-    "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
-    "editor.tabSize": 2,
-    "editor.rulers": [
-        80
-    ],
-    "terminal.integrated.fontSize": 18,
-    "atomKeymap.promptV3Features": true,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": true,
-    "markdown.extension.toc.githubCompatibility": true,
-    "window.zoomLevel": 0,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true,
-    "ruby.useBundler": true,
-    "ruby.useLanguageServer": true,
-    "ruby.lint": {
-        "rubocop": {
-            "useBundler": true
-        }
-    },
-    "ruby.format": "rubocop",
-    "ruby.specClearTerminal": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.formatOnSave": true,
-    "telemetry.enableTelemetry": false,
-    "go.useLanguageServer": true,
-    "[go]": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
-        },
-        // Optional: Disable snippets, as they conflict with completion ranking.
-        "editor.snippetSuggestions": "none",
-    },
-    "[go.mod]": {
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
-        },
-    },
-    "gopls": {
-        // Add parameter placeholders when completing a function.
-        "usePlaceholders": true,
-        // If true, enable additional analyses with staticcheck.
-        // Warning: This will significantly increase memory usage.
-        "staticcheck": false,
-    },
-    "go.autocompleteUnimportedPackages": true,
-    "go.coverageOptions": "showUncoveredCodeOnly"
-    "files.associations": {
-+     ".Brewfile": "ruby"
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 18,
+  "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  "terminal.integrated.fontSize": 18,
+  "editor.formatOnPaste": true,
+  "markdown.extension.toc.githubCompatibility": true,
+  "window.zoomLevel": 0,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true
     }
+  },
+  "ruby.format": "rubocop",
+  "ruby.specClearTerminal": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "telemetry.enableTelemetry": false,
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    // Optional: Disable snippets, as they conflict with completion ranking.
+    "editor.snippetSuggestions": "none"
+  },
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "gopls": {
+    // Add parameter placeholders when completing a function.
+    "usePlaceholders": true,
+    // If true, enable additional analyses with staticcheck.
+    // Warning: This will significantly increase memory usage.
+    "staticcheck": false
+  },
+  "go.autocompleteUnimportedPackages": true,
+  "go.coverageOptions": "showUncoveredCodeOnly",
+  "files.associations": {
+    ".Brewfile": "ruby"
+  }
 }
