@@ -41,28 +41,34 @@
   "markdown.extension.toc.githubCompatibility": true,
 
   // Go
-  "go.useLanguageServer": true,
   "go.autocompleteUnimportedPackages": true,
   "go.coverageOptions": "showUncoveredCodeOnly",
-  "[go]": {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    },
-    // Optional: Disable snippets, as they conflict with completion ranking.
-    "editor.snippetSuggestions": "none"
-  },
-  "[go.mod]": {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--enable=golint",
+    "--enable=goimports",
+    "--exclude-use-default=false"
+  ],
+  "go.useLanguageServer": true,
   "gopls": {
     // Add parameter placeholders when completing a function.
     "usePlaceholders": true,
     // If true, enable additional analyses with staticcheck.
     // Warning: This will significantly increase memory usage.
     "staticcheck": false
+  },
+  "[go]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.formatOnSave": true,
+    // Optional: Disable snippets, as they conflict with completion ranking.
+    "editor.snippetSuggestions": "none"
+  },
+  "[go.mod]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.formatOnSave": true
   }
 }
