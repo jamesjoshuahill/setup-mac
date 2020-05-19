@@ -1,16 +1,27 @@
 {
-  "files.autoSave": "onFocusChange",
-  "editor.fontSize": 18,
+  "editor.fontSize": 17,
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.tabSize": 2,
-  "editor.rulers": [80],
-  "terminal.integrated.fontSize": 18,
   "editor.formatOnPaste": true,
-  "markdown.extension.toc.githubCompatibility": true,
-  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "files.associations": {
+    ".Brewfile": "ruby"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.idea": true
+  },
   "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
   "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.fontSize": 17,
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile",
+
+  // Ruby
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
   "ruby.lint": {
@@ -20,13 +31,19 @@
   },
   "ruby.format": "rubocop",
   "ruby.specClearTerminal": false,
-  "workbench.startupEditor": "newUntitledFile",
+
+  // JavaScript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true,
-  "telemetry.enableTelemetry": false,
+
+  // Markdown
+  "markdown.extension.toc.githubCompatibility": true,
+
+  // Go
   "go.useLanguageServer": true,
+  "go.autocompleteUnimportedPackages": true,
+  "go.coverageOptions": "showUncoveredCodeOnly",
   "[go]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -47,10 +64,5 @@
     // If true, enable additional analyses with staticcheck.
     // Warning: This will significantly increase memory usage.
     "staticcheck": false
-  },
-  "go.autocompleteUnimportedPackages": true,
-  "go.coverageOptions": "showUncoveredCodeOnly",
-  "files.associations": {
-    ".Brewfile": "ruby"
   }
 }
