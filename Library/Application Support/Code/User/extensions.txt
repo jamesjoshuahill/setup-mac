@@ -1,6 +1,7 @@
 bierner.markdown-preview-github-styles
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
+dracula-theme.theme-dracula
 esbenp.prettier-vscode
 karunamurti.rspec-snippets
 misogi.ruby-rubocop

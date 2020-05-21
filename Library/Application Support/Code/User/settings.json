@@ -19,6 +19,7 @@
   "telemetry.enableTelemetry": false,
   "terminal.integrated.fontSize": 17,
   "window.zoomLevel": 0,
+  "workbench.colorTheme": "Dracula",
   "workbench.startupEditor": "newUntitledFile",
 
   // Ruby
