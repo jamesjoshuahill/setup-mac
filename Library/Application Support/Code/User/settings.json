@@ -26,9 +26,7 @@
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
   "ruby.lint": {
-    "rubocop": {
-      "useBundler": true
-    }
+    "rubocop": true
   },
   "ruby.format": "rubocop",
   "ruby.specClearTerminal": false,
@@ -39,7 +37,14 @@
   },
 
   // Markdown
-  "markdown.extension.toc.githubCompatibility": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // JSON with Comments
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // Go
   "go.autocompleteUnimportedPackages": true,
