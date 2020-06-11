@@ -10,7 +10,7 @@
 	pf = push --force-with-lease
 	pl = pull --rebase
 	re = remote -v
-	rs = restore --staged
+	rs = restore
 	rb = rebase
 	st = status
 	sw = switch
