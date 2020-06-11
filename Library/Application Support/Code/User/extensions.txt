@@ -3,10 +3,10 @@ DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
 esbenp.prettier-vscode
+golang.Go
 karunamurti.rspec-snippets
 misogi.ruby-rubocop
 ms-azuretools.vscode-docker
-ms-vscode.Go
 noku.rails-run-spec-vscode
 rebornix.ruby
 timonwong.shellcheck
