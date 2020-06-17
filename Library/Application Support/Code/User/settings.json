@@ -31,21 +31,6 @@
   "ruby.format": "rubocop",
   "ruby.specClearTerminal": false,
 
-  // JavaScript
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  // Markdown
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  // JSON with Comments
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
   // Go
   "go.autocompleteUnimportedPackages": true,
   "go.coverageOptions": "showUncoveredCodeOnly",
