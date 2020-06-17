@@ -5,7 +5,6 @@ dracula-theme.theme-dracula
 esbenp.prettier-vscode
 golang.Go
 karunamurti.rspec-snippets
-misogi.ruby-rubocop
 ms-azuretools.vscode-docker
 noku.rails-run-spec-vscode
 rebornix.ruby
