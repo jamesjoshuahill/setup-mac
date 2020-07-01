@@ -1,4 +1,8 @@
+bierner.github-markdown-preview
+bierner.markdown-checkbox
+bierner.markdown-emoji
 bierner.markdown-preview-github-styles
+bierner.markdown-yaml-preamble
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
@@ -10,4 +14,3 @@ noku.rails-run-spec-vscode
 rebornix.ruby
 timonwong.shellcheck
 wingrunr21.vscode-ruby
-yzhang.markdown-all-in-one
