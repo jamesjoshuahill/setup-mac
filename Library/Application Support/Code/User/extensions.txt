@@ -7,7 +7,7 @@ DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dracula-theme.theme-dracula
 esbenp.prettier-vscode
-golang.Go
+golang.go
 karunamurti.rspec-snippets
 ms-azuretools.vscode-docker
 noku.rails-run-spec-vscode
