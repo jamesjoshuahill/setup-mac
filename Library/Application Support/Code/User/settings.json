@@ -27,9 +27,9 @@
   "ruby.useBundler": true,
   "ruby.useLanguageServer": true,
   "ruby.lint": {
-    "rubocop": true
+    "standard": true
   },
-  "ruby.format": "rubocop",
+  "ruby.format": "standard",
   "ruby.specClearTerminal": false,
 
   // Go
