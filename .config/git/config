@@ -11,6 +11,7 @@
 	pl = pull --rebase
 	re = remote -v
 	rs = restore
+	rss = restore --staged
 	rb = rebase
 	st = status
 	sw = switch
