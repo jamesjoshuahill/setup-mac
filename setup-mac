@@ -3,7 +3,7 @@
 set -euo pipefail
 
 default_ruby_version="2.7.1"
-default_go_version="1.14.2"
+default_go_version="1.14.5"
 default_node_version="12.18.2"
 
 main() {
