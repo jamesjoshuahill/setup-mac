@@ -13,7 +13,7 @@ main() {
 
   install_brew
   update_brew
-  update_brew_bundle
+  install_brew_bundle
   cleanup_brew
 
   set_shell
@@ -65,8 +65,8 @@ update_brew() {
   brew update
 }
 
-update_brew_bundle() {
-  log "Update Homebrew Bundle"
+install_brew_bundle() {
+  log "Install Homebrew Bundle"
   brew bundle --global --verbose
 }
 
