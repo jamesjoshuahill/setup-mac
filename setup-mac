@@ -16,7 +16,6 @@ main() {
   update_brew_bundle
   cleanup_brew
 
-  remove_icons_from_dock
   set_shell
 
   upgrade_ruby_build
@@ -74,14 +73,6 @@ update_brew_bundle() {
 cleanup_brew() {
   log "Cleanup Homebrew"
   brew cleanup
-}
-
-remove_icons_from_dock() {
-  log "Remove icons from dock"
-  set +o pipefail
-  dockutil --list | cut -d"$(printf '\t')" -f1 | grep -v Downloads | xargs -I{} dockutil --remove '{}' --no-restart
-  set -o pipefail
-  killall Dock
 }
 
 set_shell() {

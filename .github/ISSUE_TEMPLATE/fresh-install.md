@@ -127,6 +127,7 @@ assignees: ""
 
   - [ ] Tick: System Preferences > Dock > Automatically hide and show the Dock
   - [ ] Untick: System Preferences > Dock > Show recent applications in Dock
+  - [ ] Remove all icons from Dock: `dockutil --list | cut -d"$(printf '\t')" -f1 | grep -v Downloads | xargs -I{} dockutil --remove '{}' --no-restart`
 
 - Keyboard
 
