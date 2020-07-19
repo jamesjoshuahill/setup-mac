@@ -1,3 +1,5 @@
+tap 'homebrew/cask'
+
 # bash
 brew 'bash'
 brew 'bash-completion@2'
@@ -11,6 +13,7 @@ brew 'gh'
 brew 'bat'
 brew 'bats'
 brew 'direnv'
+cask 'docker'
 brew 'dockutil'
 brew 'exa'
 brew 'exercism'
@@ -31,21 +34,20 @@ brew 'tldr'
 brew 'travis'
 brew 'watch'
 
-# Editors
-tap 'homebrew/cask'
-cask 'goland'
-brew 'nvim'
-cask 'visual-studio-code'
-
 # Language version managers
 brew 'gimme'    # Go
 brew 'nvm'      # Node.js
 brew 'rbenv'    # Ruby
 
+# Editors
+cask 'goland'
+brew 'nvim'
+cask 'visual-studio-code'
+
 # Menu bar apps
-cask 'docker'
 cask 'dropbox'
 cask 'flycut'
+cask 'itsycal'
 cask 'ivpn'
 cask 'krisp'
 cask 'rectangle'
@@ -54,7 +56,6 @@ cask 'rectangle'
 cask '1password'
 cask 'brave-browser'
 cask 'iterm2'
-cask 'itsycal'
 cask 'slack'
 cask 'tableplus'
 cask 'zoomus'
