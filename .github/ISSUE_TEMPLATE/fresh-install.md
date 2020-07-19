@@ -119,9 +119,39 @@ assignees: ""
   - [ ] Navigate to Macintosh HD > Users
   - [ ] Drag user directory into Favourites in sidebar
 
+- Dock
+
+  - [ ] Tick: System Preferences > Dock > Automatically hide and show the Dock
+  - [ ] Untick: System Preferences > Dock > Show recent applications in Dock
+
+- Keyboard
+
+  - [ ] Select 'Fast': System Preferences > Keyboard > Keyboard > Key Repeat
+  - [ ] Select 'Short': System Preferences > Keyboard > Keyboard > Delay until Repeat
+
+- Trackpad
+
+  - [ ] Tick: System Preferences > Trackpad > Point & Click > Tap to click
+
+- Sound
+
+  - [ ] Tick: System Preferences > Sound > Show volume in menu bar
+
+- Date & Time
+
+  - [ ] Untick: System Preferences > Date & Time > Clock > Use a 24-hour clock
+  - [ ] Tick: System Preferences > Date & Time > Clock > Show am/pm
+  - [ ] Tick: System Preferences > Date & Time > Clock > Show the day of the week
+  - [ ] Tick: System Preferences > Date & Time > Clock > Show date
+
 - Google Account
 
   - [ ] System Preferences > Internet Accounts > Google
+
+- Software Update
+
+  - [ ] Tick: System Preferences > Software Update > Automatically keep my Mac up to date
+  - [ ] Tick all boxes: System Preferences > Software Update > Advanced...
 
 - Slack
 
@@ -142,6 +172,3 @@ assignees: ""
 - Automator
 
   - [ ] Open `~/workflows/Convert to JPEG.workflow`
-
-- Sound
-  - [ ] Tick: System Preferences > Sound > Show volume in menu bar

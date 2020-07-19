@@ -10,7 +10,6 @@ main() {
   start
 
   update_macos
-  configure_macos
   install_sf_mono_font
 
   install_brew
@@ -50,35 +49,6 @@ start() {
 update_macos() {
   log "Update macOS"
   softwareupdate --install --all
-}
-
-configure_macos() {
-  log "Configure macOS"
-  # set menu clock format
-  # see http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns
-  defaults write com.apple.menuextra.clock "DateFormat" 'EEE d MMM  h:mm a'
-  killall SystemUIServer
-
-  # dock
-  # - turn hiding on
-  defaults write com.apple.dock autohide -bool true
-  # - do not show recent applications
-  defaults write com.apple.dock show-recents -bool FALSE
-  # - restart with new configuration
-  killall Dock
-
-  # keyboard fast key repeat, requires reboot to take effect
-  defaults write "$HOME/Library/Preferences/.GlobalPreferences" KeyRepeat -int 1
-  defaults write "$HOME/Library/Preferences/.GlobalPreferences" InitialKeyRepeat -int 15
-
-  # trackpad enable tap to click, requires logout and login to take effect
-  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-  defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-  defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-  # enable automatic software update
-  defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
-  defaults write com.apple.SoftwareUpdate AutomaticDownload -bool true
 }
 
 install_sf_mono_font() {
