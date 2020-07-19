@@ -62,7 +62,7 @@ update_vscode_extension_list
 
 ## Monthly
 
-Update the pinned versions in `~/setup-mac`:
+Update the default versions in `~/.config/post_install/*.bash`:
 
 - [Ruby](https://www.ruby-lang.org/en/)
 - [Node.js](https://nodejs.org/en/)

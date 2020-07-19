@@ -2,39 +2,18 @@
 
 set -euo pipefail
 
-default_ruby_version="2.7.1"
-default_go_version="1.14.6"
-default_node_version="12.18.2"
-
 main() {
   start
 
   update_macos
-
-  install_brew
-  update_brew
-  install_brew_bundle
-  cleanup_brew
-
-  set_shell
-
-  upgrade_ruby_build
-  install_ruby
-  update_ruby_gems
-
-  install_go
-
-  install_node
-  install_yarn
-
-  install_vs_code_extensions
-
-  install_git-co-author
+  install_homebrew
+  install_homebrew_bundle
+  run_post_install_scripts
 
   finish
 }
 
-log()  {
+log() {
   local message=$1
   echo -e "\033[1m--> ${message}\033[0m"
 }
@@ -48,7 +27,7 @@ update_macos() {
   softwareupdate --install --all
 }
 
-install_brew() {
+install_homebrew() {
   log "Install Homebrew"
   if hash brew &> /dev/null
   then
@@ -59,94 +38,16 @@ install_brew() {
   yes '' | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
-update_brew() {
-  log "Update Homebrew"
-  brew update
-}
-
-install_brew_bundle() {
+install_homebrew_bundle() {
   log "Install Homebrew Bundle"
   brew bundle --global --verbose
 }
 
-cleanup_brew() {
-  log "Cleanup Homebrew"
-  brew cleanup
-}
-
-set_shell() {
-  log "Set shell"
-  local homebrew_bash="/usr/local/bin/bash"
-  if ! grep $homebrew_bash /etc/shells &> /dev/null
-  then
-    echo $homebrew_bash | sudo tee -a /etc/shells > /dev/null
-    echo "Added Homebrew bash to system shells."
-  fi
-
-  local user_shell
-  user_shell=$(dscl /Local/Default -read "/Users/$USER" UserShell | cut -d' ' -f2)
-  if [ "$user_shell" = $homebrew_bash ]
-  then
-    return
-  fi
-
-  chsh -s /usr/local/bin/bash
-}
-
-upgrade_ruby_build() {
-  log "Upgrade ruby-build"
-  brew upgrade ruby-build
-}
-
-install_ruby() {
-  log "Install Ruby ${default_ruby_version}"
-  eval "$(rbenv init -)"
-  rbenv install $default_ruby_version --skip-existing
-  rbenv global $default_ruby_version
-}
-
-update_ruby_gems() {
-  log "Update Ruby Gems"
-  gem update --system
-}
-
-install_go() {
-  log "Install Go ${default_go_version}"
-  gimme $default_go_version
-}
-
-install_node() {
-  log "Install Node.js ${default_node_version}"
-
-  export NVM_DIR="$HOME/.nvm"
-  # shellcheck disable=SC1091
-  source "/usr/local/opt/nvm/nvm.sh"
-
-  nvm install $default_node_version
-  nvm alias default $default_node_version
-  npm completion > /usr/local/etc/bash_completion.d/npm
-}
-
-install_yarn() {
-  log "Install yarn"
-  npm install yarn --global
-}
-
-install_vs_code_extensions() {
-  log "Install VS Code extensions"
-  # shellcheck disable=SC1090
-  source "$HOME/.config/profile.d/code.bash"
-  install_vscode_extensions
-}
-
-install_git-co-author() {
-  log "Install git-co-author"
-  local temp_file
-  temp_file=$(mktemp)
-  curl https://raw.githubusercontent.com/jamesjoshuahill/git-co-author/master/git-co-author \
-    --silent --show-error --output "$temp_file"
-  install -C "$temp_file" /usr/local/bin/git-co-author
-  touch "$HOME/.config/git/commit-template"
+run_post_install_scripts() {
+  for installer in "$HOME/.config/post_install"/*.bash
+  do
+    command "$installer"
+  done
 }
 
 finish() {
