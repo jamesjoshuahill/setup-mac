@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 
-main() {
-  set_shell
-}
-
-log() {
-  local message=$1
-  echo -e "\033[1m--> ${message}\033[0m"
-}
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+# shellcheck disable=SC1090
+source "$DIR/log.bash"
 
 set_shell() {
   log "Set user shell"
@@ -22,10 +17,11 @@ set_shell() {
   user_shell=$(dscl /Local/Default -read "/Users/$USER" UserShell | cut -d' ' -f2)
   if [ "$user_shell" = $homebrew_bash ]
   then
+    echo "User shell already set to Homebrew bash."
     return
   fi
 
   chsh -s /usr/local/bin/bash
 }
 
-main
+set_shell

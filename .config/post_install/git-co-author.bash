@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 
-main() {
-  install_git-co-author
-}
-
-log() {
-  local message=$1
-  echo -e "\033[1m--> ${message}\033[0m"
-}
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+# shellcheck disable=SC1090
+source "$DIR/log.bash"
 
 install_git-co-author() {
   log "Install git-co-author"
@@ -19,4 +14,4 @@ install_git-co-author() {
   touch "$HOME/.config/git/commit-template"
 }
 
-main
+install_git-co-author

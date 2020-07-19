@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+# shellcheck disable=SC1090
+source "$DIR/log.bash"
+
 default_node_version="12.18.2"
 
 main() {
   install_node
   install_yarn
-}
-
-log() {
-  local message=$1
-  echo -e "\033[1m--> ${message}\033[0m"
 }
 
 install_node() {

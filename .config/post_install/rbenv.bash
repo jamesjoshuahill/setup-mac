@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+# shellcheck disable=SC1090
+source "$DIR/log.bash"
+
 default_ruby_version="2.7.1"
 
 main() {
   upgrade_ruby_build
   install_ruby
   update_ruby_gems
-}
-
-log() {
-  local message=$1
-  echo -e "\033[1m--> ${message}\033[0m"
 }
 
 upgrade_ruby_build() {

@@ -1,13 +1,8 @@
 #!/usr/bin/env bash
 
-main() {
-  install_vscode_extensions
-}
-
-log() {
-  local message=$1
-  echo -e "\033[1m--> ${message}\033[0m"
-}
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+# shellcheck disable=SC1090
+source "$DIR/log.bash"
 
 install_vscode_extensions() {
   log "Install VS Code extensions"
@@ -15,4 +10,4 @@ install_vscode_extensions() {
     xargs -n 1 code --force --install-extension
 }
 
-main
+install_vscode_extensions

@@ -1,19 +1,14 @@
 #!/usr/bin/env bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+# shellcheck disable=SC1090
+source "$DIR/log.bash"
+
 default_go_version="1.14.6"
-
-main() {
-  install_go
-}
-
-log() {
-  local message=$1
-  echo -e "\033[1m--> ${message}\033[0m"
-}
 
 install_go() {
   log "Install Go ${default_go_version}"
   gimme $default_go_version
 }
 
-main
+install_go
