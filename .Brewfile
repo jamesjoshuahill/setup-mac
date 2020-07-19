@@ -1,7 +1,6 @@
 # bash
 brew 'bash'
 brew 'bash-completion@2'
-brew 'shellcheck'
 
 # git
 brew 'git'
@@ -10,6 +9,7 @@ brew 'gh'
 
 # Command line tools
 brew 'bat'
+brew 'bats'
 brew 'direnv'
 brew 'dockutil'
 brew 'exa'
@@ -24,6 +24,7 @@ brew 'jq'
 brew 'kubectl'
 brew 'make'
 brew 'ripgrep'
+brew 'shellcheck'
 brew 'tldr'
 brew 'travis'
 brew 'watch'
