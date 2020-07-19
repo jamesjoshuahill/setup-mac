@@ -30,7 +30,6 @@ main() {
   install_vs_code_extensions
 
   install_git-co-author
-  create_projects_directory
 
   finish
 }
@@ -148,11 +147,6 @@ install_git-co-author() {
     --silent --show-error --output "$temp_file"
   install -C "$temp_file" /usr/local/bin/git-co-author
   touch "$HOME/.config/git/commit-template"
-}
-
-create_projects_directory() {
-  log "Create ~/projects"
-  mkdir -p "$HOME/projects"
 }
 
 finish() {
