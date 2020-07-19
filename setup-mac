@@ -27,7 +27,7 @@ main() {
   install_node
   install_yarn
 
-  install_vscode_extensions
+  install_vs_code_extensions
 
   install_git-co-author
   create_projects_directory
@@ -133,9 +133,11 @@ install_yarn() {
   npm install yarn --global
 }
 
-install_vscode_extensions() {
+install_vs_code_extensions() {
   log "Install VS Code extensions"
-  xargs -n 1 code --force --install-extension < "$HOME/Library/Application Support/Code/User/extensions.txt"
+  # shellcheck disable=SC1090
+  source "$HOME/.config/profile.d/code.bash"
+  install_vscode_extensions
 }
 
 install_git-co-author() {

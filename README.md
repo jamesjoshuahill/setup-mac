@@ -57,7 +57,7 @@ setup-git push
 Update the VS Code extension list:
 
 ```bash
-~/update-vscode-extension-list
+update_vscode_extension_list
 ```
 
 ## Monthly
