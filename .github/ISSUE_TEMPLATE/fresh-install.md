@@ -84,6 +84,10 @@ assignees: ""
   - [ ] Create a GitHub [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) for your new Mac with the `repo` scope.
   - [ ] Run a git command on a private repo and enter GitHub credentials. The token will be saved in the keychain.
 
+- SF Mono font
+
+  - [ ] Run `cp /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts/SFMono-*.otf "$HOME/Library/Fonts/"`
+
 - iTerm
 
   - [ ] Tick: General > Preferences > Load preferences from a custom folder or URL and type in the `~/.iterm` directory.
