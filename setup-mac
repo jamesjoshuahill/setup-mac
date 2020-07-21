@@ -6,7 +6,7 @@ main() {
   start
 
   update_macos
-  install_homebrew
+  install_or_update_homebrew
   install_homebrew_bundle
   run_post_install_scripts
 
@@ -27,15 +27,15 @@ update_macos() {
   softwareupdate --install --all
 }
 
-install_homebrew() {
-  log "Install Homebrew"
+install_or_update_homebrew() {
   if hash brew &> /dev/null
   then
-    echo "Homebrew already installed."
-    return
+    log "Update Homebrew"
+    brew update
+  else
+    log "Install Homebrew"
+    yes '' | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
-
-  yes '' | ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 }
 
 install_homebrew_bundle() {
