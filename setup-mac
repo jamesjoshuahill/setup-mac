@@ -6,8 +6,8 @@ main() {
   start
 
   update_macos
-  install_or_update_homebrew
-  install_or_update_homebrew_bundle
+  update_homebrew
+  update_homebrew_bundle
   run_post_install_scripts
 
   finish
@@ -27,7 +27,7 @@ update_macos() {
   softwareupdate --install --all
 }
 
-install_or_update_homebrew() {
+update_homebrew() {
   if hash brew &> /dev/null
   then
     log "Update Homebrew"
@@ -38,8 +38,8 @@ install_or_update_homebrew() {
   fi
 }
 
-install_or_update_homebrew_bundle() {
-  log "Install/Update Homebrew Bundle"
+update_homebrew_bundle() {
+  log "Update Homebrew Bundle"
   brew bundle --global --verbose
 }
 
