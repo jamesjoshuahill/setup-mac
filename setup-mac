@@ -7,7 +7,7 @@ main() {
 
   update_macos
   install_or_update_homebrew
-  install_homebrew_bundle
+  install_or_update_homebrew_bundle
   run_post_install_scripts
 
   finish
@@ -38,8 +38,8 @@ install_or_update_homebrew() {
   fi
 }
 
-install_homebrew_bundle() {
-  log "Install Homebrew Bundle"
+install_or_update_homebrew_bundle() {
+  log "Install/Update Homebrew Bundle"
   brew bundle --global --verbose
 }
 
