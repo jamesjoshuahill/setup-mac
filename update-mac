@@ -38,7 +38,7 @@ update_homebrew_bundle() {
 }
 
 run_post_install_scripts() {
-  for installer in "$HOME/.config/post_install"/*.bash
+  for installer in "$HOME/.brew/post_install"/*.bash
   do
     command "$installer"
   done
