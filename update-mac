@@ -30,7 +30,7 @@ update_homebrew() {
 
 update_homebrew_bundle() {
   log "Update Homebrew Bundle"
-  brew bundle --global --verbose
+  brew bundle --verbose --file "$HOME/.brew/Brewfile"
 }
 
 run_post_install_scripts() {
