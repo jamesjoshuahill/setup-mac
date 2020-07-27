@@ -62,15 +62,15 @@ assignees: ""
 
 ### Install packages
 
-- Run the setup script
+- Run the update script
 
-  - [ ] `~/setup-mac`
+  - [ ] `~/update-mac`
     > ⚠️ Apps installed using Homebrew casks need to be manually approved the
     > first time they are opened.
 
-- Restart and re-run the setup script to install all macOS updates
+- Restart and re-run the update script to install all macOS updates
   - [ ] Restart Mac
-  - [ ] Re-run setup script
+  - [ ] Re-run update script
 
 ### One-off configuration
 

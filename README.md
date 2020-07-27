@@ -1,7 +1,7 @@
 # setup-mac
 
 This repo records the configuration of my Mac. It can be used to set up a new
-Mac and keep it up to date.
+Mac and update it.
 
 Files in the home directory are tracked using a bare git repository in `~/.setup`.
 
@@ -10,8 +10,7 @@ Files in the home directory are tracked using a bare git repository in `~/.setup
 - A Mac computer
 - macOS Catalina
 
-The setup script has limited requirements: Git, Bash and Ruby.
-All are available on macOS by default.
+The fresh install checklist can be completed on a clean install of macOS.
 
 ## Fresh install
 
@@ -21,10 +20,10 @@ This provides a [checklist](.github/ISSUE_TEMPLATE/fresh-install.md) to set up a
 
 ## Daily
 
-Run the setup script regularly to update to the latest versions:
+Run the update script regularly to update to the latest versions:
 
 ```bash
-~/setup-mac
+~/update-mac
 ```
 
 Check for changes to config:

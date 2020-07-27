@@ -19,7 +19,7 @@ log() {
 }
 
 start() {
-  log "Start setup"
+  log "Start update"
 }
 
 update_macos() {
@@ -45,7 +45,7 @@ run_post_install_scripts() {
 }
 
 finish() {
-  log "Finished setup"
+  log "Finished update"
   echo
 }
 
