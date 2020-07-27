@@ -26,39 +26,6 @@ Run the update script regularly to update to the latest versions:
 ~/update-mac
 ```
 
-Check for changes to config:
-
-```bash
-setup-git status
-```
-
-Check in changes to tracked configuration:
-
-```bash
-setup-git add -p            # stage changes
-```
-
-Track new configuration:
-
-```bash
-setup-git add -f NEW_FILE   # track a new file
-```
-
-Commit and push:
-
-```bash
-setup-git commit -m "..."
-setup-git push
-```
-
-> ℹ️ You can use the Bash alias `s` for `setup-git` and the Git aliases for shorter commands: `s st`, `s add -p`.
-
-Update the VS Code extension list:
-
-```bash
-update_vscode_extension_list
-```
-
 ## Monthly
 
 Update the default versions in `~/.config/post_install/*.bash`:
@@ -70,6 +37,24 @@ Update the default versions in `~/.config/post_install/*.bash`:
 Update Sensible Bash in `~/.config/profile.d/sensible.bash`:
 
 - [Sensible Bash](https://github.com/mrzool/bash-sensible)
+
+## Track changes
+
+Use `setup-git` to track changes to configuration files, commit and push.
+
+```bash
+setup-git status            # check status
+setup-git add -p            # stage changes
+setup-git add NEW_FILE      # track a new file
+```
+
+> ℹ️ You can use the Bash alias `s` for `setup-git` and the Git aliases for shorter commands: `s st`, `s add -p`.
+
+Update the VS Code extension list:
+
+```bash
+update_vscode_extension_list
+```
 
 ## Acknowledgements
 
