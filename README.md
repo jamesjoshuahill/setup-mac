@@ -34,7 +34,7 @@ Update the default versions in `~/.config/post_install/*.bash`:
 - [Node.js](https://nodejs.org/en/)
 - [Go](https://golang.org/dl/)
 
-Update Sensible Bash in `~/.config/profile.d/sensible.bash`:
+Update Sensible Bash in `~/.profile.d/_sensible.bash`:
 
 - [Sensible Bash](https://github.com/mrzool/bash-sensible)
 
