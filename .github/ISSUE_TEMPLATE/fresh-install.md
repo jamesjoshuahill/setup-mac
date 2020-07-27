@@ -36,7 +36,7 @@ assignees: ""
 
   - [ ] Upgrade macOS to the latest minor release
 
-### Run setup script
+### Install pre-requisites
 
 - Install command line tools
 
@@ -45,6 +45,8 @@ assignees: ""
 - Install Homebrew
 
   - [ ] `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+
+### Install dotfiles
 
 - Set up the bare repository in `~/.setup`
 
@@ -57,6 +59,8 @@ assignees: ""
 - Update files in the home directory
 
   - [ ] `setup-git checkout`
+
+### Install packages
 
 - Run the setup script
 
