@@ -3,23 +3,19 @@
 set -euo pipefail
 
 main() {
-  start
+  log "Start update"
 
   update_macos
   update_homebrew
   update_homebrew_bundle
   run_post_install_scripts
 
-  finish
+  log "Finished update"
 }
 
 log() {
   local message=$1
   echo -e "\033[1m--> ${message}\033[0m"
-}
-
-start() {
-  log "Start update"
 }
 
 update_macos() {
@@ -42,11 +38,6 @@ run_post_install_scripts() {
   do
     command "$installer"
   done
-}
-
-finish() {
-  log "Finished update"
-  echo
 }
 
 main
