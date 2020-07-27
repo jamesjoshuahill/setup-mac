@@ -36,7 +36,8 @@ update_homebrew_bundle() {
 run_post_install_scripts() {
   for installer in "$HOME/.brew/post_install"/*.bash
   do
-    command "$installer"
+    # shellcheck disable=SC1090
+    source "$installer"
   done
 }
 
