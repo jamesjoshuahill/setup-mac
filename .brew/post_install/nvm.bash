@@ -6,11 +6,6 @@ source "$DIR/log.bash"
 
 default_node_version="12.18.2"
 
-main() {
-  install_node
-  install_yarn
-}
-
 install_node() {
   log "Install Node.js ${default_node_version}"
 
@@ -28,4 +23,5 @@ install_yarn() {
   npm install yarn --global
 }
 
-main
+install_node
+install_yarn

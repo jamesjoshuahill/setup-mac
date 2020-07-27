@@ -6,12 +6,6 @@ source "$DIR/log.bash"
 
 default_ruby_version="2.7.1"
 
-main() {
-  upgrade_ruby_build
-  install_ruby
-  update_ruby_gems
-}
-
 upgrade_ruby_build() {
   log "Upgrade ruby-build"
   brew upgrade ruby-build
@@ -29,4 +23,6 @@ update_ruby_gems() {
   gem update --system
 }
 
-main
+upgrade_ruby_build
+install_ruby
+update_ruby_gems
