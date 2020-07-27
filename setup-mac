@@ -28,14 +28,8 @@ update_macos() {
 }
 
 update_homebrew() {
-  if hash brew &> /dev/null
-  then
-    log "Update Homebrew"
-    brew update
-  else
-    log "Install Homebrew"
-    /usr/bin/env bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-  fi
+  log "Update Homebrew"
+  brew update
 }
 
 update_homebrew_bundle() {

@@ -42,6 +42,10 @@ assignees: ""
 
   - [ ] `xcode-select --install`
 
+- Install Homebrew
+
+  - [ ] `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+
 - Set up the bare repository in `~/.setup`
 
   ```bash
@@ -57,9 +61,6 @@ assignees: ""
 - Run the setup script
 
   - [ ] `~/setup-mac`
-    > ⚠️ When Homebrew installs for the first time it may exit non-zero. Run
-    > the setup script again to continue.
-    >
     > ⚠️ Apps installed using Homebrew casks need to be manually approved the
     > first time they are opened.
 
