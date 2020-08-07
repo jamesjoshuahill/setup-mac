@@ -50,7 +50,6 @@ cask 'dropbox'
 cask 'flycut'
 cask 'itsycal'
 cask 'ivpn'
-cask 'krisp'
 cask 'rectangle'
 
 # Apps
