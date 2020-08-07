@@ -1,4 +1,5 @@
 [alias]
+	ad = add -p
 	br = branch -vv
 	ci = commit
 	co = checkout
