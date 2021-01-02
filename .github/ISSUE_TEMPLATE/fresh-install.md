@@ -167,18 +167,6 @@ assignees: ""
 
   - [ ] Sign in
 
-- iVPN
-
-  - [ ] Sign in
-  - [ ] Turn on AntiTracker
-  - [ ] Turn on Firewall
-  - [ ] Tick: General > Autoconnect: On Launch
-  - [ ] Tick: General > On launch: Launch at login
-  - [ ] Untick: General > On launch: Show main window on launch
-  - [ ] Tick: General > On exit: Disconnect and quit without confirmation when closing application
-  - [ ] Untick: General > Diagnostics: Create log files
-  - [ ] Connect
-
 - Automator
 
   - [ ] Open `~/workflows/Convert to JPEG.workflow`
