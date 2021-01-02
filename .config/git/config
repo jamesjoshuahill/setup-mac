@@ -36,9 +36,11 @@
 
 # git-delta
 [core]
-	pager = delta --keep-plus-minus-markers --theme=Dracula
+	pager = delta --keep-plus-minus-markers
+[delta]
+	syntax-theme = Dracula
 [interactive]
-	diffFilter = delta --color-only --theme=Dracula
+	diffFilter = delta --color-only
 
 # git-co-author
 [commit]
