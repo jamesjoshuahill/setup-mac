@@ -49,7 +49,6 @@ cask 'visual-studio-code'
 cask 'dropbox'
 cask 'flycut'
 cask 'itsycal'
-cask 'ivpn'
 cask 'rectangle'
 
 # Apps
