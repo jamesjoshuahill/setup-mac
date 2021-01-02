@@ -1,19 +1,27 @@
 [alias]
-	ad = add -p
-	br = branch -vv
-	ci = commit
-	co = checkout
+	a = add
+	ap = a -p
+	b = branch -vv
+	ba = b -a
+	c = commit
+	ca = c --amend
 	cp = cherry-pick
-	di = diff
-	ds = diff --staged
-	lg = log --pretty=coloured
-	lga = log --pretty=coloured --all --graph
-	pf = push --force-with-lease
+	d = diff
+	ds = d --staged
+	f = fetch
+	l = log --pretty=coloured
+	la = l --all --graph
+	p = push
+	pu = !git p --set-upstream origin "$(git branch --show-current)"
+	pf = p --force-with-lease
 	pl = pull --rebase
 	re = remote -v
-	rs = restore
-	rss = restore --staged
+	r = restore
+	rp = r -p
+	rs = r --staged
+	rsp = rs -p
 	rb = rebase
+	s = status
 	st = status
 	sw = switch
 [commit]
