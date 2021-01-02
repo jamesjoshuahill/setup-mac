@@ -9,10 +9,10 @@ install_node() {
   set +u
   # shellcheck disable=SC1091
   source "/usr/local/opt/nvm/nvm.sh"
-  set -u
 
   nvm install $default_node_version
   nvm alias default $default_node_version
+  set -u
   npm completion > /usr/local/etc/bash_completion.d/npm
 }
 
