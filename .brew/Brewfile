@@ -54,6 +54,7 @@ cask 'rectangle'
 # Apps
 cask '1password'
 cask 'brave-browser'
+cask 'hey'
 cask 'iterm2'
 cask 'slack'
 cask 'tableplus'
